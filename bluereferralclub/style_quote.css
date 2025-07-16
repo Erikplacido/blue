@@ -1,0 +1,217 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
+  color: #0F1A2E;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Services Grid */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 40px 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card Styles */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 16px;
+  text-align: center;
+}
+
+.booking-btn {
+  margin: 0 16px 16px;
+  padding: 12px;
+  background-color: #FFD600;
+  color: #0F1A2E;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.booking-btn:hover {
+  background-color: #e5c100;
+}
+
+/* Modal Overlay */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal Content Wrapper */
+.modal-content {
+  position: relative;
+  display: flex;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Close Button */
+.close-modal {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* Modal Left Pane */
+.modal-left {
+  flex: 1;
+  background: #464a56;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+.modal-left h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.modal-left h4 {
+  font-size: 1.2rem;
+  color: #FFD600;
+  margin-bottom: 16px;
+}
+.modal-left p {
+  font-size: 0.9rem;
+  font-style: italic;
+  opacity: 0.8;
+  text-align: center;
+}
+
+/* Modal Right Pane */
+.modal-right {
+  width: 400px;
+  background: #FFD600;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.modal-right h2 {
+  font-size: 1.5rem;
+  color: #0F1A2E;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Quote Form */
+#quoteForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#quoteForm input,
+#quoteForm textarea {
+  padding: 12px;
+  border: 1px solid #DDD;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #ffffff;
+}
+
+#quoteForm .form-row {
+  display: flex;
+  gap: 16px;
+}
+#quoteForm .form-row input {
+  flex: 1;
+}
+
+#quoteForm button[type="submit"] {
+  padding: 12px;
+  background-color: #0F1A2E;
+  color: #ffffff;
+  border: none;
+  border-radius: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+#quoteForm button[type="submit"]:hover {
+  filter: brightness(0.9);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modal-content {
+    flex-direction: column;
+  }
+  .modal-right {
+    width: 100%;
+    padding: 16px;
+  }
+  .modal-left {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card img {
+    height: 120px;
+  }
+  .card h3 {
+    margin: 12px;
+    font-size: 1.1rem;
+  }
+  .booking-btn {
+    margin: 0 12px 12px;
+    padding: 10px;
+  }
+}
