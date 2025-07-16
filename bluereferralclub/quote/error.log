@@ -1,0 +1,1491 @@
+[30-Apr-2025 14:59:32 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"teste200","referred_last_name":"teste","email":"teste@teste.com","mobile":"11 22 3333 4444","postcode":"3002","client_type":"Company","service_name":"Handyman","more_details":"teste","user_id":"1"}
+[30-Apr-2025 14:59:32 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => teste200
+    [referred_last_name] => teste
+    [email] => teste@teste.com
+    [mobile] => 11 22 3333 4444
+    [postcode] => 3002
+    [client_type] => Company
+    [service_name] => Handyman
+    [more_details] => teste
+    [user_id] => 1
+)
+
+[30-Apr-2025 14:59:51 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"teste200","referred_last_name":"teste","email":"teste@teste.com","mobile":"11 22 3333 4444","postcode":"3002","client_type":"Company","service_name":"Handyman","more_details":"teste","user_id":"1"}
+[30-Apr-2025 14:59:51 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => teste200
+    [referred_last_name] => teste
+    [email] => teste@teste.com
+    [mobile] => 11 22 3333 4444
+    [postcode] => 3002
+    [client_type] => Company
+    [service_name] => Handyman
+    [more_details] => teste
+    [user_id] => 1
+)
+
+[30-Apr-2025 14:59:51 UTC] Duplicate submission blocked for teste@teste.com - Handyman
+[30-Apr-2025 15:00:01 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"teste200","referred_last_name":"teste","email":"teste@teste.com","mobile":"11 22 3333 4444","postcode":"3002","client_type":"Company","service_name":"Handyman","more_details":"teste","user_id":"1"}
+[30-Apr-2025 15:00:01 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => teste200
+    [referred_last_name] => teste
+    [email] => teste@teste.com
+    [mobile] => 11 22 3333 4444
+    [postcode] => 3002
+    [client_type] => Company
+    [service_name] => Handyman
+    [more_details] => teste
+    [user_id] => 1
+)
+
+[30-Apr-2025 15:00:01 UTC] Duplicate submission blocked for teste@teste.com - Handyman
+[30-Apr-2025 15:02:26 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"teste300","referred_last_name":"teste","email":"teste@teste.com","mobile":"11 22 3333 4444","postcode":"3002","client_type":"Home","service_name":"Gardening","more_details":"teste","user_id":"1"}
+[30-Apr-2025 15:02:26 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => teste300
+    [referred_last_name] => teste
+    [email] => teste@teste.com
+    [mobile] => 11 22 3333 4444
+    [postcode] => 3002
+    [client_type] => Home
+    [service_name] => Gardening
+    [more_details] => teste
+    [user_id] => 1
+)
+
+[30-Apr-2025 15:03:10 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"teste400","referred_last_name":"teste","email":"teste@teste.com","mobile":"11 22 3333 4444","postcode":"3002","client_type":"Home","service_name":"Steam Cleaning","more_details":"nada","user_id":"1"}
+[30-Apr-2025 15:03:10 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => teste400
+    [referred_last_name] => teste
+    [email] => teste@teste.com
+    [mobile] => 11 22 3333 4444
+    [postcode] => 3002
+    [client_type] => Home
+    [service_name] => Steam Cleaning
+    [more_details] => nada
+    [user_id] => 1
+)
+
+[01-May-2025 19:57:39 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"Adriane","referred_last_name":"Teste","email":"email1@email.com","mobile":"11 22 3333 4444","postcode":"3000","client_type":"Home","service_name":"Gardening","more_details":"Jardim","user_id":"1"}
+[01-May-2025 19:57:39 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => Adriane
+    [referred_last_name] => Teste
+    [email] => email1@email.com
+    [mobile] => 11 22 3333 4444
+    [postcode] => 3000
+    [client_type] => Home
+    [service_name] => Gardening
+    [more_details] => Jardim
+    [user_id] => 1
+)
+
+[03-May-2025 15:54:23 UTC] Raw JSON recebido: {"referral_code":"","referred":"Erik","referred_last_name":"Placido","email":"erik.placido@gmail.com","mobile":"11 22 3333 4444","postcode":"22222222","client_type":"Company","service_name":"Short Rental Cleaning","more_details":"nada d+","user_id":"1"}
+[03-May-2025 15:54:23 UTC] Received Payload: Array
+(
+    [referral_code] => 
+    [referred] => Erik
+    [referred_last_name] => Placido
+    [email] => erik.placido@gmail.com
+    [mobile] => 11 22 3333 4444
+    [postcode] => 22222222
+    [client_type] => Company
+    [service_name] => Short Rental Cleaning
+    [more_details] => nada d+
+    [user_id] => 1
+)
+
+[03-May-2025 19:41:41 UTC] Raw JSON recebido: {"referral_code":"","referred":"BATATA","referred_last_name":"FRITA","email":"erik.placido@gmail.com","mobile":"11 22 3333 4444","postcode":"2600","client_type":"Home","service_name":"Short Rental Management","more_details":"000000000000","user_id":"1"}
+[03-May-2025 19:41:41 UTC] Received Payload: Array
+(
+    [referral_code] => 
+    [referred] => BATATA
+    [referred_last_name] => FRITA
+    [email] => erik.placido@gmail.com
+    [mobile] => 11 22 3333 4444
+    [postcode] => 2600
+    [client_type] => Home
+    [service_name] => Short Rental Management
+    [more_details] => 000000000000
+    [user_id] => 1
+)
+
+[03-May-2025 19:42:56 UTC] Raw JSON recebido: {"referral_code":"","referred":"TESTE","referred_last_name":"TESTE2","email":"erik.placido@gmail.com","mobile":"11 22 3333 4444","postcode":"2259","client_type":"Company","service_name":"Pressure Washing","more_details":"00000000","user_id":"1"}
+[03-May-2025 19:42:56 UTC] Received Payload: Array
+(
+    [referral_code] => 
+    [referred] => TESTE
+    [referred_last_name] => TESTE2
+    [email] => erik.placido@gmail.com
+    [mobile] => 11 22 3333 4444
+    [postcode] => 2259
+    [client_type] => Company
+    [service_name] => Pressure Washing
+    [more_details] => 00000000
+    [user_id] => 1
+)
+
+[03-May-2025 19:48:45 UTC] Raw JSON recebido: {"referral_code":"","referred":"TESTE","referred_last_name":"TESTE2","email":"erik.placido@live.com","mobile":"11 22 3333 4444","postcode":"3002","client_type":"Company","service_name":"Strata Services","more_details":"aaaaaa","user_id":"1"}
+[03-May-2025 19:48:45 UTC] Received Payload: Array
+(
+    [referral_code] => 
+    [referred] => TESTE
+    [referred_last_name] => TESTE2
+    [email] => erik.placido@live.com
+    [mobile] => 11 22 3333 4444
+    [postcode] => 3002
+    [client_type] => Company
+    [service_name] => Strata Services
+    [more_details] => aaaaaa
+    [user_id] => 1
+)
+
+[03-May-2025 19:52:44 UTC] Raw JSON recebido: {"referral_code":"","referred":"BARAO","referred_last_name":"BARAO","email":"erik.placido@live.com","mobile":"11 22 3333 4444","postcode":"2107","client_type":"Home","service_name":"Window Cleaning","more_details":"PANO","user_id":"1"}
+[03-May-2025 19:52:44 UTC] Received Payload: Array
+(
+    [referral_code] => 
+    [referred] => BARAO
+    [referred_last_name] => BARAO
+    [email] => erik.placido@live.com
+    [mobile] => 11 22 3333 4444
+    [postcode] => 2107
+    [client_type] => Home
+    [service_name] => Window Cleaning
+    [more_details] => PANO
+    [user_id] => 1
+)
+
+[03-May-2025 20:00:37 UTC] Raw JSON recebido: {"referral_code":"","referred":"FRUTA","referred_last_name":"PAO","email":"erik.placido@gmail.com","mobile":"11 22 3333 4444","postcode":"2795","client_type":"Home","service_name":"Steam Cleaning","more_details":"VAGA JESUS","user_id":"1"}
+[03-May-2025 20:00:37 UTC] Received Payload: Array
+(
+    [referral_code] => 
+    [referred] => FRUTA
+    [referred_last_name] => PAO
+    [email] => erik.placido@gmail.com
+    [mobile] => 11 22 3333 4444
+    [postcode] => 2795
+    [client_type] => Home
+    [service_name] => Steam Cleaning
+    [more_details] => VAGA JESUS
+    [user_id] => 1
+)
+
+[03-May-2025 20:02:34 UTC] Raw JSON recebido: {"referral_code":"","referred":"pipipi","referred_last_name":"popopo","email":"email@email.com","mobile":"11 22 3333 4444","postcode":"","client_type":"Company","service_name":"Pressure Washing","more_details":"r","number":"661","address":"","suburb":"","city":"Camberra","territory":"","user_id":"1"}
+[03-May-2025 20:02:34 UTC] Received Payload: Array
+(
+    [referral_code] => 
+    [referred] => pipipi
+    [referred_last_name] => popopo
+    [email] => email@email.com
+    [mobile] => 11 22 3333 4444
+    [postcode] => 
+    [client_type] => Company
+    [service_name] => Pressure Washing
+    [more_details] => r
+    [number] => 661
+    [address] => 
+    [suburb] => 
+    [city] => Camberra
+    [territory] => 
+    [user_id] => 1
+)
+
+[03-May-2025 20:03:18 UTC] Raw JSON recebido: {"referral_code":"","referred":"a","referred_last_name":"a","email":"email@email.com","mobile":"11 22 3333 4444","postcode":"2795","client_type":"Home","service_name":"Window Cleaning","more_details":"","number":"661","address":"12th Avenue","suburb":"Mount Panorama","city":"Bathurst","territory":"Nova Gales do Sul","user_id":"1"}
+[03-May-2025 20:03:18 UTC] Received Payload: Array
+(
+    [referral_code] => 
+    [referred] => a
+    [referred_last_name] => a
+    [email] => email@email.com
+    [mobile] => 11 22 3333 4444
+    [postcode] => 2795
+    [client_type] => Home
+    [service_name] => Window Cleaning
+    [more_details] => 
+    [number] => 661
+    [address] => 12th Avenue
+    [suburb] => Mount Panorama
+    [city] => Bathurst
+    [territory] => Nova Gales do Sul
+    [user_id] => 1
+)
+
+[12-May-2025 00:11:30 UTC] Raw JSON recebido: {"referral_code":"JULI25","referred":"LUCAS","referred_last_name":"GARCIA","email":"lucas.araujo.garcia94@gmail.com","mobile":"0451023488","postcode":"2040","client_type":"Home","service_name":"Home Cleaning","more_details":"","user_id":"1"}
+[12-May-2025 00:11:30 UTC] Received Payload: Array
+(
+    [referral_code] => JULI25
+    [referred] => LUCAS
+    [referred_last_name] => GARCIA
+    [email] => lucas.araujo.garcia94@gmail.com
+    [mobile] => 0451023488
+    [postcode] => 2040
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => 
+    [user_id] => 1
+)
+
+[12-May-2025 00:16:19 UTC] Raw JSON recebido: {"referral_code":"JULI25","referred":"Anisha","referred_last_name":"Gupta","email":"anisha@asquaremigration.com","mobile":"0482655519","postcode":"2145","client_type":"Company","service_name":"Handyman","more_details":"","user_id":"1"}
+[12-May-2025 00:16:19 UTC] Received Payload: Array
+(
+    [referral_code] => JULI25
+    [referred] => Anisha
+    [referred_last_name] => Gupta
+    [email] => anisha@asquaremigration.com
+    [mobile] => 0482655519
+    [postcode] => 2145
+    [client_type] => Company
+    [service_name] => Handyman
+    [more_details] => 
+    [user_id] => 1
+)
+
+[12-May-2025 00:18:42 UTC] Raw JSON recebido: {"referral_code":"JULI25","referred":"Juli Karoline","referred_last_name":"da Cunha Madruga","email":"juli.k.c.madruga@gmail.com","mobile":"0426757977","postcode":"2040","client_type":"Home","service_name":"Strata Services","more_details":"","user_id":"1"}
+[12-May-2025 00:18:42 UTC] Received Payload: Array
+(
+    [referral_code] => JULI25
+    [referred] => Juli Karoline
+    [referred_last_name] => da Cunha Madruga
+    [email] => juli.k.c.madruga@gmail.com
+    [mobile] => 0426757977
+    [postcode] => 2040
+    [client_type] => Home
+    [service_name] => Strata Services
+    [more_details] => 
+    [user_id] => 1
+)
+
+[12-May-2025 00:25:16 UTC] Raw JSON recebido: {"referral_code":"JULI25","referred":"Anisha","referred_last_name":"Gupta","email":"anisha@asquaremigration.com","mobile":"0482655519","postcode":"2145","client_type":"Home","service_name":"Strata Services","more_details":"","user_id":"1"}
+[12-May-2025 00:25:16 UTC] Received Payload: Array
+(
+    [referral_code] => JULI25
+    [referred] => Anisha
+    [referred_last_name] => Gupta
+    [email] => anisha@asquaremigration.com
+    [mobile] => 0482655519
+    [postcode] => 2145
+    [client_type] => Home
+    [service_name] => Strata Services
+    [more_details] => 
+    [user_id] => 1
+)
+
+[12-May-2025 06:36:14 UTC] Raw JSON recebido: {"referral_code":"JULI25","referred":"Teste123","referred_last_name":"Sydney","email":"ahdabavs@aks","mobile":"19208309237","postcode":"2041","client_type":"Company","service_name":"Home Cleaning","more_details":"askjdbasdjfasd","user_id":"1"}
+[12-May-2025 06:36:14 UTC] Received Payload: Array
+(
+    [referral_code] => JULI25
+    [referred] => Teste123
+    [referred_last_name] => Sydney
+    [email] => ahdabavs@aks
+    [mobile] => 19208309237
+    [postcode] => 2041
+    [client_type] => Company
+    [service_name] => Home Cleaning
+    [more_details] => askjdbasdjfasd
+    [user_id] => 1
+)
+
+[12-May-2025 06:36:37 UTC] Raw JSON recebido: {"referral_code":"JULI25","referred":"Teste123","referred_last_name":"Sydney","email":"lucas.araujo.garcia94@gmail.com","mobile":"19208309237","postcode":"2041","client_type":"Company","service_name":"Home Cleaning","more_details":"askjdbasdjfasd","user_id":"1"}
+[12-May-2025 06:36:37 UTC] Received Payload: Array
+(
+    [referral_code] => JULI25
+    [referred] => Teste123
+    [referred_last_name] => Sydney
+    [email] => lucas.araujo.garcia94@gmail.com
+    [mobile] => 19208309237
+    [postcode] => 2041
+    [client_type] => Company
+    [service_name] => Home Cleaning
+    [more_details] => askjdbasdjfasd
+    [user_id] => 1
+)
+
+[12-May-2025 11:35:16 UTC] Raw JSON recebido: {"referral_code":"JULI25","referred":"Lucas","referred_last_name":"Garcia","email":"lucas.araujo.garcia94@gmail.com","mobile":"0451023488","postcode":"2040","client_type":"Home","service_name":"Home Cleaning","more_details":"teste 12345","user_id":"1"}
+[12-May-2025 11:35:16 UTC] Received Payload: Array
+(
+    [referral_code] => JULI25
+    [referred] => Lucas
+    [referred_last_name] => Garcia
+    [email] => lucas.araujo.garcia94@gmail.com
+    [mobile] => 0451023488
+    [postcode] => 2040
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => teste 12345
+    [user_id] => 1
+)
+
+[12-May-2025 11:36:18 UTC] Raw JSON recebido: {"referral_code":"JULI25","referred":"Lucas","referred_last_name":"Garcia","email":"lucas.araujo.garcia94@gmail.com","mobile":"0451023488","postcode":"2040","client_type":"Home","service_name":"Home Cleaning","more_details":"teste123456","user_id":"1"}
+[12-May-2025 11:36:18 UTC] Received Payload: Array
+(
+    [referral_code] => JULI25
+    [referred] => Lucas
+    [referred_last_name] => Garcia
+    [email] => lucas.araujo.garcia94@gmail.com
+    [mobile] => 0451023488
+    [postcode] => 2040
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => teste123456
+    [user_id] => 1
+)
+
+[12-May-2025 11:36:18 UTC] Duplicate submission blocked for lucas.araujo.garcia94@gmail.com - Home Cleaning
+[12-May-2025 11:37:41 UTC] Raw JSON recebido: {"referral_code":"JULI25","referred":"Lucas","referred_last_name":"Araujo garcia","email":"staff.sydney@bluefacilityservices.com.au","mobile":"0451023489","postcode":"2040","client_type":"Home","service_name":"Home Cleaning","more_details":"teste123456","user_id":"1"}
+[12-May-2025 11:37:41 UTC] Received Payload: Array
+(
+    [referral_code] => JULI25
+    [referred] => Lucas
+    [referred_last_name] => Araujo garcia
+    [email] => staff.sydney@bluefacilityservices.com.au
+    [mobile] => 0451023489
+    [postcode] => 2040
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => teste123456
+    [user_id] => 1
+)
+
+[16-May-2025 22:19:18 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"Teste 1605","referred_last_name":"teste","email":"email1@gmail.com","mobile":"111","postcode":"111","client_type":"Home","service_name":"Short Rental Cleaning","more_details":"sss","user_id":"1"}
+[16-May-2025 22:19:18 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => Teste 1605
+    [referred_last_name] => teste
+    [email] => email1@gmail.com
+    [mobile] => 111
+    [postcode] => 111
+    [client_type] => Home
+    [service_name] => Short Rental Cleaning
+    [more_details] => sss
+    [user_id] => 1
+)
+
+[16-May-2025 22:19:46 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"teste 1605","referred_last_name":"teste","email":"email1@gmail.com","mobile":"111","postcode":"111","client_type":"Home","service_name":"Short Rental Cleaning","more_details":"111","user_id":"1"}
+[16-May-2025 22:19:46 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => teste 1605
+    [referred_last_name] => teste
+    [email] => email1@gmail.com
+    [mobile] => 111
+    [postcode] => 111
+    [client_type] => Home
+    [service_name] => Short Rental Cleaning
+    [more_details] => 111
+    [user_id] => 1
+)
+
+[16-May-2025 22:19:46 UTC] Duplicate submission blocked for email1@gmail.com - Short Rental Cleaning
+[18-May-2025 14:18:09 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"1805","referred_last_name":"quote","email":"email1@mail.com","mobile":"11985768545","postcode":"3147","client_type":"Home","service_name":"Window Cleaning","more_details":"xxx","user_id":"1","address":"7A Tarakan Avenue","number":"7A","suburb":"Ashburton","city":"Ashburton","territory":"Victoria"}
+[18-May-2025 14:18:09 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => 1805
+    [referred_last_name] => quote
+    [email] => email1@mail.com
+    [mobile] => 11985768545
+    [postcode] => 3147
+    [client_type] => Home
+    [service_name] => Window Cleaning
+    [more_details] => xxx
+    [user_id] => 1
+    [address] => 7A Tarakan Avenue
+    [number] => 7A
+    [suburb] => Ashburton
+    [city] => Ashburton
+    [territory] => Victoria
+)
+
+[18-May-2025 16:37:01 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"ERIK","referred_last_name":"PLACIDO","email":"erik.placido@gmail.com","mobile":"11985768545","postcode":"","client_type":"Company","service_name":"Home Cleaning","more_details":"e","user_id":"1","address":"","number":"","suburb":"","city":"","territory":""}
+[18-May-2025 16:37:01 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => ERIK
+    [referred_last_name] => PLACIDO
+    [email] => erik.placido@gmail.com
+    [mobile] => 11985768545
+    [postcode] => 
+    [client_type] => Company
+    [service_name] => Home Cleaning
+    [more_details] => e
+    [user_id] => 1
+    [address] => 
+    [number] => 
+    [suburb] => 
+    [city] => 
+    [territory] => 
+)
+
+[18-May-2025 16:37:04 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"ERIK","referred_last_name":"PLACIDO","email":"erik.placido@gmail.com","mobile":"11985768545","postcode":"","client_type":"Company","service_name":"Home Cleaning","more_details":"e","user_id":"1","address":"","number":"","suburb":"","city":"","territory":""}
+[18-May-2025 16:37:04 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => ERIK
+    [referred_last_name] => PLACIDO
+    [email] => erik.placido@gmail.com
+    [mobile] => 11985768545
+    [postcode] => 
+    [client_type] => Company
+    [service_name] => Home Cleaning
+    [more_details] => e
+    [user_id] => 1
+    [address] => 
+    [number] => 
+    [suburb] => 
+    [city] => 
+    [territory] => 
+)
+
+[21-May-2025 05:05:42 UTC] Raw JSON recebido: {"referral_code":"teste123","referred":"Lucas","referred_last_name":"Garcia","email":"lucas.araujo.garcia94@gmail.com","mobile":"0451023488","postcode":"","client_type":"Company","service_name":"Home Cleaning","more_details":"","user_id":"1","address":"","number":"","suburb":"","city":"","territory":""}
+[21-May-2025 05:05:42 UTC] Received Payload: Array
+(
+    [referral_code] => teste123
+    [referred] => Lucas
+    [referred_last_name] => Garcia
+    [email] => lucas.araujo.garcia94@gmail.com
+    [mobile] => 0451023488
+    [postcode] => 
+    [client_type] => Company
+    [service_name] => Home Cleaning
+    [more_details] => 
+    [user_id] => 1
+    [address] => 
+    [number] => 
+    [suburb] => 
+    [city] => 
+    [territory] => 
+)
+
+[21-May-2025 05:06:03 UTC] Raw JSON recebido: {"referral_code":"teste123","referred":"Lucas","referred_last_name":"Garcia","email":"lucas.araujo.garcia94@gmail.com","mobile":"0451023488","postcode":"6556","client_type":"Company","service_name":"Home Cleaning","more_details":"","user_id":"1","address":"2040 Lilydale Road","number":"2040","suburb":"Chidlow","city":"Chidlow","territory":"Western Australia"}
+[21-May-2025 05:06:03 UTC] Received Payload: Array
+(
+    [referral_code] => teste123
+    [referred] => Lucas
+    [referred_last_name] => Garcia
+    [email] => lucas.araujo.garcia94@gmail.com
+    [mobile] => 0451023488
+    [postcode] => 6556
+    [client_type] => Company
+    [service_name] => Home Cleaning
+    [more_details] => 
+    [user_id] => 1
+    [address] => 2040 Lilydale Road
+    [number] => 2040
+    [suburb] => Chidlow
+    [city] => Chidlow
+    [territory] => Western Australia
+)
+
+[11-Jun-2025 10:14:36 UTC] Raw JSON recebido: {"referral_code":"TESTEJULI25","referred":"Juli","referred_last_name":"Madruga","email":"juli.k.c.madruga@gmail.com","mobile":"0426757977","postcode":"2040","client_type":"Home","service_name":"Short Rental Cleaning","more_details":"uhukjhk","user_id":"1","address":"29 Halloran Street","number":"29","suburb":"Lilyfield","city":"Lilyfield","territory":"New South Wales"}
+[11-Jun-2025 10:14:36 UTC] Received Payload: Array
+(
+    [referral_code] => TESTEJULI25
+    [referred] => Juli
+    [referred_last_name] => Madruga
+    [email] => juli.k.c.madruga@gmail.com
+    [mobile] => 0426757977
+    [postcode] => 2040
+    [client_type] => Home
+    [service_name] => Short Rental Cleaning
+    [more_details] => uhukjhk
+    [user_id] => 1
+    [address] => 29 Halloran Street
+    [number] => 29
+    [suburb] => Lilyfield
+    [city] => Lilyfield
+    [territory] => New South Wales
+)
+
+[11-Jun-2025 10:15:45 UTC] Raw JSON recebido: {"referral_code":"TESTEJULI25","referred":"jnsh","referred_last_name":"sad","email":"julkos@gmail.com","mobile":"0427364988","postcode":"2040","client_type":"Home","service_name":"Steam Cleaning","more_details":"fggf","user_id":"1","address":"29 Halloran Street","number":"29","suburb":"Lilyfield","city":"Lilyfield","territory":"New South Wales"}
+[11-Jun-2025 10:15:45 UTC] Received Payload: Array
+(
+    [referral_code] => TESTEJULI25
+    [referred] => jnsh
+    [referred_last_name] => sad
+    [email] => julkos@gmail.com
+    [mobile] => 0427364988
+    [postcode] => 2040
+    [client_type] => Home
+    [service_name] => Steam Cleaning
+    [more_details] => fggf
+    [user_id] => 1
+    [address] => 29 Halloran Street
+    [number] => 29
+    [suburb] => Lilyfield
+    [city] => Lilyfield
+    [territory] => New South Wales
+)
+
+[11-Jun-2025 10:16:50 UTC] Raw JSON recebido: {"referral_code":"TESTEJULI25","referred":"n","referred_last_name":"Cunha Madruga","email":"juli.k.c.madruga@gmail.com","mobile":"0426757977","postcode":"","client_type":"Home","service_name":"Strata Services","more_details":"nn","user_id":"1","address":"","number":"","suburb":"","city":"","territory":""}
+[11-Jun-2025 10:16:50 UTC] Received Payload: Array
+(
+    [referral_code] => TESTEJULI25
+    [referred] => n
+    [referred_last_name] => Cunha Madruga
+    [email] => juli.k.c.madruga@gmail.com
+    [mobile] => 0426757977
+    [postcode] => 
+    [client_type] => Home
+    [service_name] => Strata Services
+    [more_details] => nn
+    [user_id] => 1
+    [address] => 
+    [number] => 
+    [suburb] => 
+    [city] => 
+    [territory] => 
+)
+
+[11-Jun-2025 10:17:52 UTC] Raw JSON recebido: {"referral_code":"TESTEJULI25","referred":"n","referred_last_name":"Cunha Madruga","email":"juli.k.c.madruga@gmail.com","mobile":"98765","postcode":"","client_type":"Home","service_name":"Strata Services","more_details":"","user_id":"1","address":"","number":"","suburb":"","city":"","territory":""}
+[11-Jun-2025 10:17:52 UTC] Received Payload: Array
+(
+    [referral_code] => TESTEJULI25
+    [referred] => n
+    [referred_last_name] => Cunha Madruga
+    [email] => juli.k.c.madruga@gmail.com
+    [mobile] => 98765
+    [postcode] => 
+    [client_type] => Home
+    [service_name] => Strata Services
+    [more_details] => 
+    [user_id] => 1
+    [address] => 
+    [number] => 
+    [suburb] => 
+    [city] => 
+    [territory] => 
+)
+
+[02-Jul-2025 19:09:31 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"Davi","referred_last_name":"Jones","email":"paunocu@email.com","mobile":"6112345678906","postcode":"3204","client_type":"Home","service_name":"Home Cleaning","more_details":"Eu não gosto da Ubisoft","user_id":"1","address":"7A Talbot Avenue","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[02-Jul-2025 19:09:31 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => Davi
+    [referred_last_name] => Jones
+    [email] => paunocu@email.com
+    [mobile] => 6112345678906
+    [postcode] => 3204
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => Eu não gosto da Ubisoft
+    [user_id] => 1
+    [address] => 7A Talbot Avenue
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[02-Jul-2025 19:12:43 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"Davi2","referred_last_name":"Jones2","email":"paunocu2@email.com","mobile":"6112345678906","postcode":"3204","client_type":"Home","service_name":"Home Cleaning","more_details":"ahh não gosto da ubi","user_id":"1","address":"7A Talbot Avenue","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[02-Jul-2025 19:12:43 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => Davi2
+    [referred_last_name] => Jones2
+    [email] => paunocu2@email.com
+    [mobile] => 6112345678906
+    [postcode] => 3204
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => ahh não gosto da ubi
+    [user_id] => 1
+    [address] => 7A Talbot Avenue
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[02-Jul-2025 19:37:41 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"erik","referred_last_name":"placido","email":"erik.placido@gmail.com","mobile":"6112345678906","postcode":"3204","client_type":"Home","service_name":"Home Cleaning","more_details":"nada","user_id":"1","address":"7A Talbot Avenue","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[02-Jul-2025 19:37:41 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => erik
+    [referred_last_name] => placido
+    [email] => erik.placido@gmail.com
+    [mobile] => 6112345678906
+    [postcode] => 3204
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => nada
+    [user_id] => 1
+    [address] => 7A Talbot Avenue
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[02-Jul-2025 19:46:34 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"erik7","referred_last_name":"placido2","email":"erik.placido@gmail.com","mobile":"6112345678906","postcode":"2229","client_type":"Home","service_name":"Home Cleaning","more_details":"XXX","user_id":"1","address":"7A Taronga Parade","number":"7A","suburb":"Caringbah","city":"Caringbah","territory":"New South Wales"}
+[02-Jul-2025 19:46:34 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => erik7
+    [referred_last_name] => placido2
+    [email] => erik.placido@gmail.com
+    [mobile] => 6112345678906
+    [postcode] => 2229
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => XXX
+    [user_id] => 1
+    [address] => 7A Taronga Parade
+    [number] => 7A
+    [suburb] => Caringbah
+    [city] => Caringbah
+    [territory] => New South Wales
+)
+
+[02-Jul-2025 20:06:24 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"Papa","referred_last_name":"Gaio","email":"erik.placido@gmail.com","mobile":"112112121212121","postcode":"2250","client_type":"Home","service_name":"Home Cleaning","more_details":"aaa","user_id":"1","address":"7A Talinga Avenue","number":"7A","suburb":"Point Clare","city":"Point Clare","territory":"New South Wales"}
+[02-Jul-2025 20:06:24 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => Papa
+    [referred_last_name] => Gaio
+    [email] => erik.placido@gmail.com
+    [mobile] => 112112121212121
+    [postcode] => 2250
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => aaa
+    [user_id] => 1
+    [address] => 7A Talinga Avenue
+    [number] => 7A
+    [suburb] => Point Clare
+    [city] => Point Clare
+    [territory] => New South Wales
+)
+
+[02-Jul-2025 20:07:10 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"erik11","referred_last_name":"eee","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"","client_type":"Home","service_name":"Home Cleaning","more_details":"jajaja","user_id":"1","address":"","number":"","suburb":"","city":"","territory":""}
+[02-Jul-2025 20:07:10 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => erik11
+    [referred_last_name] => eee
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => jajaja
+    [user_id] => 1
+    [address] => 
+    [number] => 
+    [suburb] => 
+    [city] => 
+    [territory] => 
+)
+
+[02-Jul-2025 20:07:17 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"erik11","referred_last_name":"eee","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"","client_type":"Home","service_name":"Home Cleaning","more_details":"jajaja","user_id":"1","address":"","number":"","suburb":"","city":"","territory":""}
+[02-Jul-2025 20:07:17 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => erik11
+    [referred_last_name] => eee
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => jajaja
+    [user_id] => 1
+    [address] => 
+    [number] => 
+    [suburb] => 
+    [city] => 
+    [territory] => 
+)
+
+[02-Jul-2025 20:07:21 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"erik11","referred_last_name":"eee","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"","client_type":"Home","service_name":"Home Cleaning","more_details":"jajaja","user_id":"1","address":"","number":"","suburb":"","city":"","territory":""}
+[02-Jul-2025 20:07:21 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => erik11
+    [referred_last_name] => eee
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => jajaja
+    [user_id] => 1
+    [address] => 
+    [number] => 
+    [suburb] => 
+    [city] => 
+    [territory] => 
+)
+
+[02-Jul-2025 20:07:21 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"erik11","referred_last_name":"eee","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"","client_type":"Home","service_name":"Home Cleaning","more_details":"jajaja","user_id":"1","address":"","number":"","suburb":"","city":"","territory":""}
+[02-Jul-2025 20:07:21 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => erik11
+    [referred_last_name] => eee
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => jajaja
+    [user_id] => 1
+    [address] => 
+    [number] => 
+    [suburb] => 
+    [city] => 
+    [territory] => 
+)
+
+[02-Jul-2025 20:07:22 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"erik11","referred_last_name":"eee","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"","client_type":"Home","service_name":"Home Cleaning","more_details":"jajaja","user_id":"1","address":"","number":"","suburb":"","city":"","territory":""}
+[02-Jul-2025 20:07:22 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => erik11
+    [referred_last_name] => eee
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => jajaja
+    [user_id] => 1
+    [address] => 
+    [number] => 
+    [suburb] => 
+    [city] => 
+    [territory] => 
+)
+
+[02-Jul-2025 20:07:32 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"erik11","referred_last_name":"eee","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"2229","client_type":"Home","service_name":"Home Cleaning","more_details":"jajaja","user_id":"1","address":"7A Taronga Parade","number":"7A","suburb":"Caringbah","city":"Caringbah","territory":"New South Wales"}
+[02-Jul-2025 20:07:32 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => erik11
+    [referred_last_name] => eee
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 2229
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => jajaja
+    [user_id] => 1
+    [address] => 7A Taronga Parade
+    [number] => 7A
+    [suburb] => Caringbah
+    [city] => Caringbah
+    [territory] => New South Wales
+)
+
+[02-Jul-2025 20:07:32 UTC] Duplicate submission blocked for erik.placido@gmail.com - Home Cleaning
+[02-Jul-2025 20:07:52 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"erik11","referred_last_name":"eee","email":"erik.placido@gmail.com","mobile":"55 11 8181 1122","postcode":"2229","client_type":"Home","service_name":"Home Cleaning","more_details":"jajaja","user_id":"1","address":"7A Taronga Parade","number":"7A","suburb":"Caringbah","city":"Caringbah","territory":"New South Wales"}
+[02-Jul-2025 20:07:52 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => erik11
+    [referred_last_name] => eee
+    [email] => erik.placido@gmail.com
+    [mobile] => 55 11 8181 1122
+    [postcode] => 2229
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => jajaja
+    [user_id] => 1
+    [address] => 7A Taronga Parade
+    [number] => 7A
+    [suburb] => Caringbah
+    [city] => Caringbah
+    [territory] => New South Wales
+)
+
+[02-Jul-2025 20:07:52 UTC] Duplicate submission blocked for erik.placido@gmail.com - Home Cleaning
+[02-Jul-2025 20:07:53 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"erik11","referred_last_name":"eee","email":"erik.placido@gmail.com","mobile":"55 11 8181 1122","postcode":"2229","client_type":"Home","service_name":"Home Cleaning","more_details":"jajaja","user_id":"1","address":"7A Taronga Parade","number":"7A","suburb":"Caringbah","city":"Caringbah","territory":"New South Wales"}
+[02-Jul-2025 20:07:53 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => erik11
+    [referred_last_name] => eee
+    [email] => erik.placido@gmail.com
+    [mobile] => 55 11 8181 1122
+    [postcode] => 2229
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => jajaja
+    [user_id] => 1
+    [address] => 7A Taronga Parade
+    [number] => 7A
+    [suburb] => Caringbah
+    [city] => Caringbah
+    [territory] => New South Wales
+)
+
+[02-Jul-2025 20:07:53 UTC] Duplicate submission blocked for erik.placido@gmail.com - Home Cleaning
+[02-Jul-2025 20:08:45 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"erik11","referred_last_name":"eee","email":"erik.placido@gmail.com","mobile":"551112341234","postcode":"3204","client_type":"Home","service_name":"Home Cleaning","more_details":"aaaa","user_id":"1","address":"7A Talbot Avenue","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[02-Jul-2025 20:08:45 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => erik11
+    [referred_last_name] => eee
+    [email] => erik.placido@gmail.com
+    [mobile] => 551112341234
+    [postcode] => 3204
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => aaaa
+    [user_id] => 1
+    [address] => 7A Talbot Avenue
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[02-Jul-2025 20:10:07 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"erik99","referred_last_name":"placido","email":"erik.placido@gmail.com","mobile":"551112341223","postcode":"3204","client_type":"Home","service_name":"Home Cleaning","more_details":"","user_id":"1","address":"7A Talbot Avenue","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[02-Jul-2025 20:10:07 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => erik99
+    [referred_last_name] => placido
+    [email] => erik.placido@gmail.com
+    [mobile] => 551112341223
+    [postcode] => 3204
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => 
+    [user_id] => 1
+    [address] => 7A Talbot Avenue
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[02-Jul-2025 20:10:07 UTC] Duplicate submission blocked for erik.placido@gmail.com - Home Cleaning
+[02-Jul-2025 20:10:16 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"erik99","referred_last_name":"placido","email":"erik.placido@gmail.com","mobile":"551112341223","postcode":"3204","client_type":"Home","service_name":"Home Cleaning","more_details":"a","user_id":"1","address":"7A Talbot Avenue","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[02-Jul-2025 20:10:16 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => erik99
+    [referred_last_name] => placido
+    [email] => erik.placido@gmail.com
+    [mobile] => 551112341223
+    [postcode] => 3204
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => a
+    [user_id] => 1
+    [address] => 7A Talbot Avenue
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[02-Jul-2025 20:10:16 UTC] Duplicate submission blocked for erik.placido@gmail.com - Home Cleaning
+[02-Jul-2025 20:11:24 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"erik","referred_last_name":"placido","email":"erik.placido@gmail.com","mobile":"551112341234","postcode":"3204","client_type":"Home","service_name":"Home Cleaning","more_details":"123","user_id":"1","address":"7A Talbot Avenue","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[02-Jul-2025 20:11:24 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => erik
+    [referred_last_name] => placido
+    [email] => erik.placido@gmail.com
+    [mobile] => 551112341234
+    [postcode] => 3204
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => 123
+    [user_id] => 1
+    [address] => 7A Talbot Avenue
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[02-Jul-2025 20:15:25 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"erik","referred_last_name":"placido","email":"erik.placido@gmail.com","mobile":"551112341234","postcode":"3204","client_type":"Home","service_name":"Commercial Cleaning","more_details":"aaa","user_id":"1","address":"7A Talbot Avenue","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[02-Jul-2025 20:15:25 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => erik
+    [referred_last_name] => placido
+    [email] => erik.placido@gmail.com
+    [mobile] => 551112341234
+    [postcode] => 3204
+    [client_type] => Home
+    [service_name] => Commercial Cleaning
+    [more_details] => aaa
+    [user_id] => 1
+    [address] => 7A Talbot Avenue
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[02-Jul-2025 20:17:13 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"erik","referred_last_name":"placido","email":"erik.placido@gmail.com","mobile":"551112341234","postcode":"3204","client_type":"Home","service_name":"Home Cleaning","more_details":"A","user_id":"1","address":"7A Talbot Avenue","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[02-Jul-2025 20:17:13 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => erik
+    [referred_last_name] => placido
+    [email] => erik.placido@gmail.com
+    [mobile] => 551112341234
+    [postcode] => 3204
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => A
+    [user_id] => 1
+    [address] => 7A Talbot Avenue
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[04-Jul-2025 21:56:58 UTC] Raw JSON recebido: {"referral_code":"MOULDDOCTOR","referred":"erik","referred_last_name":"placido","email":"erik.placido@gmail.com","mobile":"23232323232","postcode":"2250","client_type":"Home","service_name":"Pressure Washing","more_details":"aaaa","user_id":"1","address":"7A Talinga Avenue","number":"7A","suburb":"Point Clare","city":"Point Clare","territory":"New South Wales"}
+[04-Jul-2025 21:56:58 UTC] Received Payload: Array
+(
+    [referral_code] => MOULDDOCTOR
+    [referred] => erik
+    [referred_last_name] => placido
+    [email] => erik.placido@gmail.com
+    [mobile] => 23232323232
+    [postcode] => 2250
+    [client_type] => Home
+    [service_name] => Pressure Washing
+    [more_details] => aaaa
+    [user_id] => 1
+    [address] => 7A Talinga Avenue
+    [number] => 7A
+    [suburb] => Point Clare
+    [city] => Point Clare
+    [territory] => New South Wales
+)
+
+[10-Jul-2025 17:16:41 UTC] Raw JSON recebido: {"referral_code":"erik42","referred":"Camila","referred_last_name":"Ferrari","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"3204","client_type":"Company","service_name":"Commercial Cleaning","more_details":"Preciso de bla bla bla","user_id":"1","address":"7A Talbot Avenue","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[10-Jul-2025 17:16:41 UTC] Received Payload: Array
+(
+    [referral_code] => erik42
+    [referred] => Camila
+    [referred_last_name] => Ferrari
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 3204
+    [client_type] => Company
+    [service_name] => Commercial Cleaning
+    [more_details] => Preciso de bla bla bla
+    [user_id] => 1
+    [address] => 7A Talbot Avenue
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[10-Jul-2025 17:32:17 UTC] Raw JSON recebido: {"referral_code":"erik42","referred":"Ozzi","referred_last_name":"Osborne","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"6055","client_type":"Home","service_name":"Home Cleaning","more_details":"metal!","user_id":"1","address":"7 Talbot Road","number":"7","suburb":"Hazelmere","city":"Hazelmere","territory":"Western Australia"}
+[10-Jul-2025 17:32:17 UTC] Received Payload: Array
+(
+    [referral_code] => erik42
+    [referred] => Ozzi
+    [referred_last_name] => Osborne
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 6055
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => metal!
+    [user_id] => 1
+    [address] => 7 Talbot Road
+    [number] => 7
+    [suburb] => Hazelmere
+    [city] => Hazelmere
+    [territory] => Western Australia
+)
+
+[10-Jul-2025 17:36:16 UTC] Raw JSON recebido: {"referral_code":"erik42","referred":"Principe","referred_last_name":"Vidane","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"3204","client_type":"Home","service_name":"Short Rental Cleaning","more_details":"clt","user_id":"1","address":"7A Tucker Road","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[10-Jul-2025 17:36:16 UTC] Received Payload: Array
+(
+    [referral_code] => erik42
+    [referred] => Principe
+    [referred_last_name] => Vidane
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 3204
+    [client_type] => Home
+    [service_name] => Short Rental Cleaning
+    [more_details] => clt
+    [user_id] => 1
+    [address] => 7A Tucker Road
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[10-Jul-2025 17:40:33 UTC] Raw JSON recebido: {"referral_code":"erik42","referred":"Principes","referred_last_name":"Vidane","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"3204","client_type":"Home","service_name":"Short Rental Cleaning","more_details":"clt","user_id":"1","address":"7A Tucker Road","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[10-Jul-2025 17:40:33 UTC] Received Payload: Array
+(
+    [referral_code] => erik42
+    [referred] => Principes
+    [referred_last_name] => Vidane
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 3204
+    [client_type] => Home
+    [service_name] => Short Rental Cleaning
+    [more_details] => clt
+    [user_id] => 1
+    [address] => 7A Tucker Road
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[10-Jul-2025 17:45:13 UTC] Raw JSON recebido: {"referral_code":"erik42","referred":"Principesa","referred_last_name":"Vidane","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"3204","client_type":"Home","service_name":"Short Rental Cleaning","more_details":"clt","user_id":"1","address":"7A Tucker Road","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[10-Jul-2025 17:45:13 UTC] Received Payload: Array
+(
+    [referral_code] => erik42
+    [referred] => Principesa
+    [referred_last_name] => Vidane
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 3204
+    [client_type] => Home
+    [service_name] => Short Rental Cleaning
+    [more_details] => clt
+    [user_id] => 1
+    [address] => 7A Tucker Road
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[10-Jul-2025 17:45:45 UTC] Raw JSON recebido: {"referral_code":"erik42","referred":"Principesas","referred_last_name":"Vidane","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"3204","client_type":"Home","service_name":"Short Rental Cleaning","more_details":"clt","user_id":"1","address":"7A Tucker Road","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[10-Jul-2025 17:45:45 UTC] Received Payload: Array
+(
+    [referral_code] => erik42
+    [referred] => Principesas
+    [referred_last_name] => Vidane
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 3204
+    [client_type] => Home
+    [service_name] => Short Rental Cleaning
+    [more_details] => clt
+    [user_id] => 1
+    [address] => 7A Tucker Road
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[10-Jul-2025 17:45:45 UTC] Duplicate submission blocked for erik.placido@gmail.com - Short Rental Cleaning
+[10-Jul-2025 17:45:52 UTC] Raw JSON recebido: {"referral_code":"erik42","referred":"Principesas","referred_last_name":"Vidane","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"3204","client_type":"Home","service_name":"Short Rental Cleaning","more_details":"clt","user_id":"1","address":"7A Tucker Road","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[10-Jul-2025 17:45:52 UTC] Received Payload: Array
+(
+    [referral_code] => erik42
+    [referred] => Principesas
+    [referred_last_name] => Vidane
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 3204
+    [client_type] => Home
+    [service_name] => Short Rental Cleaning
+    [more_details] => clt
+    [user_id] => 1
+    [address] => 7A Tucker Road
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[10-Jul-2025 17:45:52 UTC] Duplicate submission blocked for erik.placido@gmail.com - Short Rental Cleaning
+[10-Jul-2025 17:46:20 UTC] Raw JSON recebido: {"referral_code":"erik42","referred":"Principesss","referred_last_name":"teste","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"6055","client_type":"Home","service_name":"Handyman","more_details":"","user_id":"1","address":"7 Talbot Road","number":"7","suburb":"Hazelmere","city":"Hazelmere","territory":"Western Australia"}
+[10-Jul-2025 17:46:20 UTC] Received Payload: Array
+(
+    [referral_code] => erik42
+    [referred] => Principesss
+    [referred_last_name] => teste
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 6055
+    [client_type] => Home
+    [service_name] => Handyman
+    [more_details] => 
+    [user_id] => 1
+    [address] => 7 Talbot Road
+    [number] => 7
+    [suburb] => Hazelmere
+    [city] => Hazelmere
+    [territory] => Western Australia
+)
+
+[10-Jul-2025 17:47:58 UTC] Raw JSON recebido: {"referral_code":"erik42","referred":"Principessss","referred_last_name":"teste","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"6055","client_type":"Home","service_name":"Handyman","more_details":"","user_id":"1","address":"7 Talbot Road","number":"7","suburb":"Hazelmere","city":"Hazelmere","territory":"Western Australia"}
+[10-Jul-2025 17:47:58 UTC] Received Payload: Array
+(
+    [referral_code] => erik42
+    [referred] => Principessss
+    [referred_last_name] => teste
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 6055
+    [client_type] => Home
+    [service_name] => Handyman
+    [more_details] => 
+    [user_id] => 1
+    [address] => 7 Talbot Road
+    [number] => 7
+    [suburb] => Hazelmere
+    [city] => Hazelmere
+    [territory] => Western Australia
+)
+
+[10-Jul-2025 17:47:58 UTC] Duplicate submission blocked for erik.placido@gmail.com - Handyman
+[10-Jul-2025 17:48:06 UTC] Raw JSON recebido: {"referral_code":"erik42","referred":"Principessss","referred_last_name":"teste","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"6055","client_type":"Home","service_name":"Short Rental Management","more_details":"","user_id":"1","address":"7 Talbot Road","number":"7","suburb":"Hazelmere","city":"Hazelmere","territory":"Western Australia"}
+[10-Jul-2025 17:48:06 UTC] Received Payload: Array
+(
+    [referral_code] => erik42
+    [referred] => Principessss
+    [referred_last_name] => teste
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 6055
+    [client_type] => Home
+    [service_name] => Short Rental Management
+    [more_details] => 
+    [user_id] => 1
+    [address] => 7 Talbot Road
+    [number] => 7
+    [suburb] => Hazelmere
+    [city] => Hazelmere
+    [territory] => Western Australia
+)
+
+[10-Jul-2025 17:48:45 UTC] Raw JSON recebido: {"referral_code":"erik42","referred":"Principessss","referred_last_name":"teste","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"6055","client_type":"Home","service_name":"Short Rental Management","more_details":"","user_id":"1","address":"7 Talbot Road","number":"7","suburb":"Hazelmere","city":"Hazelmere","territory":"Western Australia"}
+[10-Jul-2025 17:48:45 UTC] Received Payload: Array
+(
+    [referral_code] => erik42
+    [referred] => Principessss
+    [referred_last_name] => teste
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 6055
+    [client_type] => Home
+    [service_name] => Short Rental Management
+    [more_details] => 
+    [user_id] => 1
+    [address] => 7 Talbot Road
+    [number] => 7
+    [suburb] => Hazelmere
+    [city] => Hazelmere
+    [territory] => Western Australia
+)
+
+[10-Jul-2025 17:48:45 UTC] Duplicate submission blocked for erik.placido@gmail.com - Short Rental Management
+[10-Jul-2025 17:49:00 UTC] Raw JSON recebido: {"referral_code":"erik42","referred":"Principessss","referred_last_name":"teste","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"6055","client_type":"Home","service_name":"Short Rental Management","more_details":"","user_id":"1","address":"7 Talbot Road","number":"7","suburb":"Hazelmere","city":"Hazelmere","territory":"Western Australia"}
+[10-Jul-2025 17:49:00 UTC] Received Payload: Array
+(
+    [referral_code] => erik42
+    [referred] => Principessss
+    [referred_last_name] => teste
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 6055
+    [client_type] => Home
+    [service_name] => Short Rental Management
+    [more_details] => 
+    [user_id] => 1
+    [address] => 7 Talbot Road
+    [number] => 7
+    [suburb] => Hazelmere
+    [city] => Hazelmere
+    [territory] => Western Australia
+)
+
+[10-Jul-2025 17:49:00 UTC] Duplicate submission blocked for erik.placido@gmail.com - Short Rental Management
+[10-Jul-2025 17:49:02 UTC] Raw JSON recebido: {"referral_code":"erik42","referred":"Principessss","referred_last_name":"teste","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"6055","client_type":"Home","service_name":"Short Rental Management","more_details":"","user_id":"1","address":"7 Talbot Road","number":"7","suburb":"Hazelmere","city":"Hazelmere","territory":"Western Australia"}
+[10-Jul-2025 17:49:02 UTC] Received Payload: Array
+(
+    [referral_code] => erik42
+    [referred] => Principessss
+    [referred_last_name] => teste
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 6055
+    [client_type] => Home
+    [service_name] => Short Rental Management
+    [more_details] => 
+    [user_id] => 1
+    [address] => 7 Talbot Road
+    [number] => 7
+    [suburb] => Hazelmere
+    [city] => Hazelmere
+    [territory] => Western Australia
+)
+
+[10-Jul-2025 17:49:02 UTC] Duplicate submission blocked for erik.placido@gmail.com - Short Rental Management
+[10-Jul-2025 17:49:03 UTC] Raw JSON recebido: {"referral_code":"erik42","referred":"Principesssss","referred_last_name":"teste","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"6055","client_type":"Home","service_name":"Short Rental Management","more_details":"","user_id":"1","address":"7 Talbot Road","number":"7","suburb":"Hazelmere","city":"Hazelmere","territory":"Western Australia"}
+[10-Jul-2025 17:49:03 UTC] Received Payload: Array
+(
+    [referral_code] => erik42
+    [referred] => Principesssss
+    [referred_last_name] => teste
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 6055
+    [client_type] => Home
+    [service_name] => Short Rental Management
+    [more_details] => 
+    [user_id] => 1
+    [address] => 7 Talbot Road
+    [number] => 7
+    [suburb] => Hazelmere
+    [city] => Hazelmere
+    [territory] => Western Australia
+)
+
+[10-Jul-2025 17:49:03 UTC] Duplicate submission blocked for erik.placido@gmail.com - Short Rental Management
+[10-Jul-2025 17:49:05 UTC] Raw JSON recebido: {"referral_code":"erik42","referred":"Principesssss","referred_last_name":"teste","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"6055","client_type":"Home","service_name":"Short Rental Management","more_details":"","user_id":"1","address":"7 Talbot Road","number":"7","suburb":"Hazelmere","city":"Hazelmere","territory":"Western Australia"}
+[10-Jul-2025 17:49:05 UTC] Received Payload: Array
+(
+    [referral_code] => erik42
+    [referred] => Principesssss
+    [referred_last_name] => teste
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 6055
+    [client_type] => Home
+    [service_name] => Short Rental Management
+    [more_details] => 
+    [user_id] => 1
+    [address] => 7 Talbot Road
+    [number] => 7
+    [suburb] => Hazelmere
+    [city] => Hazelmere
+    [territory] => Western Australia
+)
+
+[10-Jul-2025 17:49:05 UTC] Duplicate submission blocked for erik.placido@gmail.com - Short Rental Management
+[10-Jul-2025 17:49:08 UTC] Raw JSON recebido: {"referral_code":"erik42","referred":"Principesssss","referred_last_name":"testes","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"6055","client_type":"Home","service_name":"Short Rental Management","more_details":"","user_id":"1","address":"7 Talbot Road","number":"7","suburb":"Hazelmere","city":"Hazelmere","territory":"Western Australia"}
+[10-Jul-2025 17:49:08 UTC] Received Payload: Array
+(
+    [referral_code] => erik42
+    [referred] => Principesssss
+    [referred_last_name] => testes
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 6055
+    [client_type] => Home
+    [service_name] => Short Rental Management
+    [more_details] => 
+    [user_id] => 1
+    [address] => 7 Talbot Road
+    [number] => 7
+    [suburb] => Hazelmere
+    [city] => Hazelmere
+    [territory] => Western Australia
+)
+
+[10-Jul-2025 17:49:08 UTC] Duplicate submission blocked for erik.placido@gmail.com - Short Rental Management
+[10-Jul-2025 17:49:27 UTC] Raw JSON recebido: {"referral_code":"erik42","referred":"Principessssa","referred_last_name":"Vidane","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"3041","client_type":"Home","service_name":"Pressure Washing","more_details":"","user_id":"1","address":"8A Talbot Road","number":"8A","suburb":"Strathmore","city":"Strathmore","territory":"Victoria"}
+[10-Jul-2025 17:49:27 UTC] Received Payload: Array
+(
+    [referral_code] => erik42
+    [referred] => Principessssa
+    [referred_last_name] => Vidane
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 3041
+    [client_type] => Home
+    [service_name] => Pressure Washing
+    [more_details] => 
+    [user_id] => 1
+    [address] => 8A Talbot Road
+    [number] => 8A
+    [suburb] => Strathmore
+    [city] => Strathmore
+    [territory] => Victoria
+)
+
+[10-Jul-2025 18:06:45 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 18:17:49 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 18:21:04 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 18:23:39 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 18:31:29 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 18:32:28 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 18:33:21 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 18:36:28 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 18:42:29 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 18:45:40 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 18:49:27 UTC] Error fetching booking_value: Unknown column 'booking_value' in 'SELECT'
+[10-Jul-2025 18:49:27 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 18:50:34 UTC] Error fetching booking_value: Unknown column 'booking_value' in 'SELECT'
+[10-Jul-2025 18:50:34 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 18:53:39 UTC] Error fetching booking_value: Unknown column 'booking_value' in 'SELECT'
+[10-Jul-2025 18:53:39 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 18:56:54 UTC] Error fetching booking_value: Unknown column 'booking_value' in 'SELECT'
+[10-Jul-2025 18:56:54 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 19:02:10 UTC] Error fetching booking_value: Unknown column 'booking_value' in 'SELECT'
+[10-Jul-2025 19:02:10 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 19:02:49 UTC] Error fetching booking_value: Unknown column 'booking_value' in 'SELECT'
+[10-Jul-2025 19:02:49 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 19:05:41 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 19:10:07 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 19:41:17 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 19:43:10 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 19:49:54 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 20:07:55 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 20:08:11 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 20:11:16 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 20:41:26 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[10-Jul-2025 21:59:35 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"Patrik","referred_last_name":"Maia","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"3144","client_type":"Home","service_name":"Window Cleaning","more_details":"maquina de lavar","user_id":"1","address":"7A Talbot Crescent","number":"7A","suburb":"Kooyong","city":"Kooyong","territory":"Victoria"}
+[10-Jul-2025 21:59:35 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => Patrik
+    [referred_last_name] => Maia
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 3144
+    [client_type] => Home
+    [service_name] => Window Cleaning
+    [more_details] => maquina de lavar
+    [user_id] => 1
+    [address] => 7A Talbot Crescent
+    [number] => 7A
+    [suburb] => Kooyong
+    [city] => Kooyong
+    [territory] => Victoria
+)
+
+[10-Jul-2025 22:04:38 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[11-Jul-2025 14:07:11 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[11-Jul-2025 14:16:31 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"Felip","referred_last_name":"Felca","email":"erik.placido@gmail.com","mobile":"929292929","postcode":"4403","client_type":"Home","service_name":"Home Cleaning","more_details":"girassol","user_id":"1","address":"00000 Werths Road","number":"00000","suburb":"Jondaryan","city":"Jondaryan","territory":"Queensland"}
+[11-Jul-2025 14:16:31 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => Felip
+    [referred_last_name] => Felca
+    [email] => erik.placido@gmail.com
+    [mobile] => 929292929
+    [postcode] => 4403
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => girassol
+    [user_id] => 1
+    [address] => 00000 Werths Road
+    [number] => 00000
+    [suburb] => Jondaryan
+    [city] => Jondaryan
+    [territory] => Queensland
+)
+
+[11-Jul-2025 15:01:29 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[11-Jul-2025 15:01:36 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[11-Jul-2025 17:40:42 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[11-Jul-2025 17:51:41 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[11-Jul-2025 18:13:13 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[11-Jul-2025 19:16:13 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[11-Jul-2025 19:17:36 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[12-Jul-2025 18:59:16 UTC] Raw JSON recebido: {"referral_code":"TESTE1","referred":"teste1","referred_last_name":"teste1","email":"erik.placido@gmail.com","mobile":"123456789","postcode":"3204","client_type":"Home","service_name":"Home Cleaning","more_details":"teste1","user_id":"1","address":"7A Talbot Avenue","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[12-Jul-2025 18:59:16 UTC] Received Payload: Array
+(
+    [referral_code] => TESTE1
+    [referred] => teste1
+    [referred_last_name] => teste1
+    [email] => erik.placido@gmail.com
+    [mobile] => 123456789
+    [postcode] => 3204
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => teste1
+    [user_id] => 1
+    [address] => 7A Talbot Avenue
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[12-Jul-2025 19:00:56 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[12-Jul-2025 19:01:05 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[12-Jul-2025 19:02:53 UTC] Raw JSON recebido: {"referral_code":"TESTE2","referred":"teste2","referred_last_name":"teste2","email":"erik.placido@gmail.com","mobile":"123456789","postcode":"3204","client_type":"Company","service_name":"Commercial Cleaning","more_details":"teste2","user_id":"1","address":"7A Talbot Avenue","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[12-Jul-2025 19:02:53 UTC] Received Payload: Array
+(
+    [referral_code] => TESTE2
+    [referred] => teste2
+    [referred_last_name] => teste2
+    [email] => erik.placido@gmail.com
+    [mobile] => 123456789
+    [postcode] => 3204
+    [client_type] => Company
+    [service_name] => Commercial Cleaning
+    [more_details] => teste2
+    [user_id] => 1
+    [address] => 7A Talbot Avenue
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[12-Jul-2025 19:04:33 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[12-Jul-2025 19:07:14 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"ERIK42","referred_last_name":"ERIK42","email":"erik.placido@gmail.com","mobile":"123456789","postcode":"3204","client_type":"Home","service_name":"Gardening","more_details":"ERIK42","user_id":"1","address":"7A Talbot Avenue","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[12-Jul-2025 19:07:14 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => ERIK42
+    [referred_last_name] => ERIK42
+    [email] => erik.placido@gmail.com
+    [mobile] => 123456789
+    [postcode] => 3204
+    [client_type] => Home
+    [service_name] => Gardening
+    [more_details] => ERIK42
+    [user_id] => 1
+    [address] => 7A Talbot Avenue
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[14-Jul-2025 10:20:05 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"erik","referred_last_name":"placido","email":"erik.placido@gmail.com","mobile":"123456789","postcode":"3204","client_type":"Home","service_name":"Home Cleaning","more_details":"nada","user_id":"1","address":"7A Talbot Avenue","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[14-Jul-2025 10:20:05 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => erik
+    [referred_last_name] => placido
+    [email] => erik.placido@gmail.com
+    [mobile] => 123456789
+    [postcode] => 3204
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => nada
+    [user_id] => 1
+    [address] => 7A Talbot Avenue
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[14-Jul-2025 10:24:08 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[15-Jul-2025 19:54:29 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[15-Jul-2025 19:58:09 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[15-Jul-2025 19:58:48 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[15-Jul-2025 20:13:20 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'

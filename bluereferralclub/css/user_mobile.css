@@ -1,0 +1,112 @@
+/* Mobile Overrides (≤ 768px) */
+@media only screen and (max-width: 768px) {
+  /* Reset geral */
+  body {
+    padding: 10px;
+    height: auto;
+    gap: 10px;
+  }
+
+  /* HEADER */
+  header.main-header {
+    height: auto;
+    padding: 10px;
+    border-radius: 16px;
+  }
+  .header-banner {
+    margin: 0 -10px;
+    height: 80px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+  .banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  /* Navegação */
+  .header-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    height: auto;
+  }
+  .logo-link {
+    font-size: 1.3rem;
+  }
+  .header-actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .header-actions button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px 12px;
+    font-size: 1rem;
+  }
+
+  /* Account Dropdown */
+  .account-dropdown {
+    position: static;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  /* Middle Section */
+  .middle {
+    flex-direction: column;
+    height: auto;
+  }
+  .middle > div {
+    margin-bottom: 15px;
+    padding: 20px;
+  }
+
+  /* Bottom Section */
+  .bottom {
+    padding: 15px;
+  }
+  .bottom table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  /* Tables */
+  th, td {
+    padding: 8px;
+  }
+
+  /* Inputs e Selects */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    padding: 6px 8px;
+    font-size: 0.9rem;
+  }
+
+  /* Botões gerais */
+  button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border-radius: 35px;
+  }
+
+  /* Modal Geral */
+  .modal-content {
+    width: 95%;
+    max-width: none;
+    padding: 20px;
+  }
+  .close-button {
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+  }
+}
