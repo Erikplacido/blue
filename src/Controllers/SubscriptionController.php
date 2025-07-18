@@ -12,7 +12,7 @@ class SubscriptionController
         return Subscription::update($subscriptionId, [
             'pause_collection' => [
                 'behavior'  => 'void',
-                'resume_at' => strtotime("+{$months} month"),
+                'resumes_at' => strtotime("+{$months} month"),
             ],
         ]);
     }
@@ -20,7 +20,7 @@ class SubscriptionController
     public function resume(string $subscriptionId): Subscription
     {
         Stripe::setApiKey(env('STRIPE_SECRET_KEY'));
-        // Para retomar antes do resume_at, basta limpar pause_collection
+        // Para retomar antes do resumes_at, basta limpar pause_collection
         return Subscription::update($subscriptionId, [
             'pause_collection' => '',
         ]);
