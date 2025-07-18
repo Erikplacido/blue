@@ -1,0 +1,28 @@
+# Logs and debug output
+*.log
+logs/
+log/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+
+# Dependency directories
+node_modules/
+vendor/
+
+# PHP cache
+cache/
+
+# Misc
+.env
+
