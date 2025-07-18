@@ -2,19 +2,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const input           = document.getElementById("discountCode");
   const applyBtn        = document.getElementById("applyDiscountBtn");
   const hiddenInput     = document.getElementById("hiddenCouponCode");
-  const form            = document.getElementById("bookingForm");
   const totalLabel      = document.querySelector(".summary-total");
   const modalTotalLabel = document.getElementById("totalPriceLabel");
 
-  if (!input || !applyBtn || !hiddenInput || !totalLabel || !modalTotalLabel || !form) return;
-
-  form.addEventListener("submit", () => {
-    hiddenInput.value = input.value.trim();
-  });
+  if (!input || !applyBtn || !hiddenInput || !totalLabel || !modalTotalLabel) return;
 
   applyBtn.addEventListener("click", () => {
     const code = input.value.trim();
-    hiddenInput.value = code;
     if (!code) {
       alert("Por favor, digite um código.");
       return;
@@ -40,10 +34,12 @@ document.addEventListener("DOMContentLoaded", () => {
           alert("✅ Cupom aplicado com sucesso!");
         } else {
           alert("❌ Cupom inválido ou expirado.");
+          hiddenInput.value = "";
         }
       })
       .catch(() => {
         alert("⚠️ Não foi possível validar o cupom. Tente novamente.");
+        hiddenInput.value = "";
       });
   });
 });
