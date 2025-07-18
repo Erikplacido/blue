@@ -8,6 +8,18 @@ use Src\Database\Connection;
 class Booking {
     protected PDO $db;
 
+    // General booking statuses
+    public const STATUS_PENDING   = 'pending';
+    public const STATUS_PAID      = 'paid';
+    public const STATUS_SCHEDULED = 'scheduled';
+    public const STATUS_COMPLETED = 'completed';
+    public const STATUS_FAILED    = 'failed';
+
+    // Recurrence statuses
+    public const RECURRENCE_STATUS_ACTIVE    = 'active';
+    public const RECURRENCE_STATUS_PAUSED    = 'paused';
+    public const RECURRENCE_STATUS_CANCELLED = 'cancelled';
+
     public function __construct() {
         $this->db = Connection::getInstance()->getPDO();
     }

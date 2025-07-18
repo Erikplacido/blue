@@ -34,7 +34,10 @@ class WebhookController
         // 1) Fluxo de cancelamento de multa
         if ($action === 'cancel_break_fee' && $bookingId && $subscriptionId) {
             Subscription::update($subscriptionId, ['cancel_at_period_end' => true]);
-            (new Booking())->updateRecurrenceStatus($bookingId, 'cancelled');
+            (new Booking())->updateRecurrenceStatus(
+                $bookingId,
+                Booking::RECURRENCE_STATUS_CANCELLED
+            );
             return;
         }
 
@@ -42,7 +45,7 @@ class WebhookController
         if ($bookingId && $subscriptionId) {
             $b = new Booking();
             $b->updateSubscriptionId($bookingId, $subscriptionId);
-            $b->updateStatus($bookingId, 'scheduled');
+            $b->updateStatus($bookingId, Booking::STATUS_SCHEDULED);
             return;
         }
 
@@ -104,9 +107,9 @@ class WebhookController
 
         $remaining = $b->getRemainingExecutions($bookingId);
         if ($remaining > 0) {
-            $b->updateStatus($bookingId, 'scheduled');
+            $b->updateStatus($bookingId, Booking::STATUS_SCHEDULED);
         } else {
-            $b->updateStatus($bookingId, 'completed');
+            $b->updateStatus($bookingId, Booking::STATUS_COMPLETED);
         }
     }
 
@@ -131,7 +134,7 @@ class WebhookController
         }
 
         $b = new Booking();
-        $b->updateStatus($bookingId, 'pending');
+        $b->updateStatus($bookingId, Booking::STATUS_PENDING);
     }
 
     /**
@@ -143,7 +146,10 @@ class WebhookController
     {
         error_log("🔍 [subscriptionCancelled] subscription_id={$subscriptionId}");
         $b = new Booking();
-        $b->updateRecurrenceStatusBySubscription($subscriptionId, 'cancelled');
+        $b->updateRecurrenceStatusBySubscription(
+            $subscriptionId,
+            Booking::RECURRENCE_STATUS_CANCELLED
+        );
     }
 
     /**
