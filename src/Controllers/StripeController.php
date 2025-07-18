@@ -30,7 +30,7 @@ class StripeController {
 
         // Dados do produto
         $priceData = [
-            'currency'     => 'aud',
+            'currency'     => DEFAULT_CURRENCY,
             'product_data' => [
                 'name' => 'Service Booking: ' . $booking['execution_date'],
             ],

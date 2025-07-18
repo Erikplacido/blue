@@ -130,7 +130,7 @@ HTML;
             'mode'                 => 'payment',
             'line_items'           => [[
                 'price_data' => [
-                    'currency'     => 'usd',
+                    'currency'     => DEFAULT_CURRENCY,
                     'unit_amount'  => intval($breakFee * 100),
                     'product_data' => [
                         'name' => "Multa quebra booking #{$bookingId}"

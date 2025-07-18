@@ -16,4 +16,8 @@ This repository contains a PHP-based web application for managing bookings and r
 3. Configure your web server to serve the PHP files from the repository directories.
 4. Install any PHP dependencies into the `vendor/` directory if using Composer.
 
+## Currency configuration
+
+All Stripe transactions use the currency defined by the `DEFAULT_CURRENCY` constant in `src/config.php`. Update that constant to change the application's default currency. If you need to support different currencies for specific flows, introduce additional constants in `config.php` and reference them where required.
+
 This project does not include detailed deployment scripts, but the above steps outline the general setup required to run the application locally or on a server.
