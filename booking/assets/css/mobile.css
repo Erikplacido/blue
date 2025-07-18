@@ -1,0 +1,27 @@
+/* Mobile optimizations for booking page */
+@media (max-width: 768px) {
+  .booking__container {
+    padding: var(--space-md);
+  }
+  .booking-bar {
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+  .booking-bar__item {
+    flex-basis: 100%;
+  }
+  .item-card {
+    flex: 1 1 100%;
+  }
+  #summaryBar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #summaryBar button {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  #summaryPanel {
+    padding: 1rem;
+  }
+}

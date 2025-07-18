@@ -1,0 +1,233 @@
+/* ================================
+   1. Design Tokens
+================================ */
+:root {
+  --color-primary: #11284B;
+  --color-primary-dark: #344966;
+  --color-bg: #11284B;
+  --color-surface: #ffffff;
+  --color-border: #e5e7eb;
+  --color-text: #1f2937;
+  --color-text-muted: #6b7280;
+  --color-error: #e74c3c;
+
+  --font-sans: 'Inter', sans-serif;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 1rem;
+}
+
+/* ================================
+   2. Reset & Base
+================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* ================================
+   3. Hero Layout
+================================ */
+.hero {
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.hero__left {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.hero__left::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--color-surface);
+  border-top-right-radius: 56px;
+  border-bottom-right-radius: 56px;
+  z-index: 0;
+}
+.hero__card {
+  position: relative;
+  z-index: 1;
+  padding: 48px 32px 56px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 460px;
+}
+
+.brand-tag {
+  display: inline-block;
+  padding: 4px 16px;
+  border: 1px solid var(--color-primary);
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-bottom: var(--space-lg);
+}
+
+.hero__card > h1 {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 800;
+  color: var(--color-text);
+  max-width: 500px;
+  margin-bottom: var(--space-lg);
+}
+
+/* ================================
+   4. Form Styles
+================================ */
+.info-form {
+  margin-top: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+}
+.info-form h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+.info-form input {
+  height: 40px;
+  width: 100%;
+  padding: 0 var(--space-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+.info-form input::placeholder {
+  color: #9E9E9E;
+}
+.info-form input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  transition: border-color 150ms ease-out;
+}
+.input-error {
+  border-color: var(--color-error) !important;
+}
+
+.error-text {
+  font-size: 12px;
+  color: var(--color-error);
+  margin-bottom: var(--space-sm);
+  display: block;
+}
+
+.info-form button {
+  height: 40px;
+  width: 100%;
+  background: var(--color-primary);
+  color: #F0D71A;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 150ms ease-out;
+  margin-top: var(--space-sm);
+}
+.info-form button:hover {
+  background: var(--color-primary-dark);
+}
+
+.text-center {
+  text-align: center;
+}
+.text-primary {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.text-primary:hover {
+  text-decoration: underline;
+}
+.mt-4 {
+  margin-top: var(--space-md);
+}
+
+/* ================================
+   5. Hero Image
+================================ */
+.hero__right {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+.hero__right .hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ================================
+   6. Responsive
+================================ */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero__left {
+    justify-content: flex-start;
+  }
+  .hero__left::before {
+    border-radius: 0;
+  }
+  .hero__card {
+    padding: 32px;
+  }
+  .hero__card > h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .hero__right {
+    flex: 0 0 auto;
+    height: 300px;
+  }
+  .hero__right .hero-image {
+    position: relative;
+    inset: auto;
+    transform: none;
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+  }
+}
+
+a.btn,
+a.btn:link,
+a.btn:visited {
+  text-decoration: none;          /* remove o traço */
+  color: var(--color-btn);        /* garante o amarelo da paleta */
+}
+
+a.btn:hover,
+a.btn:focus {
+  text-decoration: none;          /* continua sem traço no hover/focus */
+  color: var(--color-primary-dark);  /* já tinha no .btn:hover */
+}
