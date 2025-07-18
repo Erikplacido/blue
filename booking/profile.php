@@ -46,10 +46,7 @@ if (isset($_GET['paid'], $_GET['booking_id']) && $_GET['paid'] === '1') {
         $bookingModel->updateBreakFee($paidBookingId, $breakFee);
         
         // atualiza status no banco
-        $bookingModel->updateRecurrenceStatus(
-            $paidBookingId,
-            Booking::RECURRENCE_STATUS_CANCELLED
-        );
+        $bookingModel->updateRecurrenceStatus($paidBookingId, 'canceled');
         $success = 'Multa paga com sucesso! Sua assinatura será cancelada ao fim do período atual.';
     }
 }
@@ -133,7 +130,7 @@ HTML;
             'mode'                 => 'payment',
             'line_items'           => [[
                 'price_data' => [
-                    'currency'     => DEFAULT_CURRENCY,
+                    'currency'     => 'usd',
                     'unit_amount'  => intval($breakFee * 100),
                     'product_data' => [
                         'name' => "Multa quebra booking #{$bookingId}"
@@ -197,10 +194,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && empty($_POST['cancel_subscription']
 $activeRecurringBooking = null;
 $bookings = $bookingModel->getAllByCustomer($customerId);
 foreach ($bookings as $b) {
-    if (
-        !empty($b['stripe_subscription_id']) &&
-        ($b['recurrence_status'] ?? '') === Booking::RECURRENCE_STATUS_ACTIVE
-    ) {
+    if (!empty($b['stripe_subscription_id']) && ($b['recurrence_status'] ?? '') === 'active') {
         $activeRecurringBooking = $b;
         break;
     }
