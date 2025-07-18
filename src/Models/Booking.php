@@ -42,9 +42,9 @@ class Booking {
                 INSERT INTO bookings
                     (customer_id, service_id, recurrence, execution_date,
                      start_time, end_time, recurrence_interval,
-                     address, postcode, latitude, longitude,
+                     address, postcode, latitude, longitude, coupon_code, points_used,
                      total_price, status, contract_length, remaining_executions, num_days)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ");
             $stmt->execute([
                 $data['customer_id'],
@@ -58,6 +58,8 @@ class Booking {
                 $data['postcode'],
                 $data['latitude'],
                 $data['longitude'],
+                $data['coupon_code'] ?? null,
+                $data['points_used'] ?? 0,
                 $data['total_price'],
                 $data['status'],
                 $data['contract_length'],

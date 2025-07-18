@@ -171,6 +171,7 @@ $booking = $bookingModel->create([
     'longitude'           => $input['longitude'],
     'total_price'         => $totalPrice,
     'coupon_code'         => $validCouponCode,
+    'points_used'        => $pointsApplied,
     'status'              => 'pending',
 ]);
 
