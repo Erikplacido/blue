@@ -40,7 +40,7 @@ try {
         'payment_method_types' => ['card'],
         'line_items' => [[
             'price_data' => [
-                'currency'    => 'aud',
+                'currency'    => DEFAULT_CURRENCY,
                 'unit_amount' => intval(round($bookingValue * 100)), // em centavos
                 'product_data' => [
                     'name'        => $serviceName,
