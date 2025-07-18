@@ -22,7 +22,7 @@ class Booking {
     /**
      * Cria uma nova booking e salva também as preferências
      *
-     * @param array $data  Todos os campos de booking + 'preferences' => [field_id => '1', ...]
+     * @param array $data  Todos os campos de booking (inclui 'coupon_code') + 'preferences' => [field_id => '1', ...]
      * @return array       Mesmo $data, agora com ['id'] adicionado
      * @throws PDOException
      */
@@ -43,8 +43,9 @@ class Booking {
                     (customer_id, service_id, recurrence, execution_date,
                      start_time, end_time, recurrence_interval,
                      address, postcode, latitude, longitude,
-                     total_price, status, contract_length, remaining_executions, num_days)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                     total_price, coupon_code, status, contract_length,
+                     remaining_executions, num_days)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ");
             $stmt->execute([
                 $data['customer_id'],
@@ -59,6 +60,7 @@ class Booking {
                 $data['latitude'],
                 $data['longitude'],
                 $data['total_price'],
+                $data['coupon_code'],
                 $data['status'],
                 $data['contract_length'],
                 $data['remaining_executions'],
