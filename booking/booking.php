@@ -403,7 +403,6 @@ $recurrence = $_POST['recurrence']
                             >
                             <button type="button" id="applyDiscountBtn" class="apply-btn">Add</button>
                         </div>
-                        <input type="hidden" id="hiddenCouponCode" name="hiddenCouponCode">
                     </div>
 
                     <!-- Points -->
