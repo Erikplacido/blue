@@ -2,10 +2,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const input           = document.getElementById("discountCode");
   const applyBtn        = document.getElementById("applyDiscountBtn");
   const hiddenInput     = document.getElementById("hiddenCouponCode");
+  const bookingForm     = document.getElementById("bookingForm");
   const totalLabel      = document.querySelector(".summary-total");
   const modalTotalLabel = document.getElementById("totalPriceLabel");
 
-  if (!input || !applyBtn || !hiddenInput || !totalLabel || !modalTotalLabel) return;
+  if (!input || !applyBtn || !hiddenInput || !bookingForm || !totalLabel || !modalTotalLabel) return;
 
   applyBtn.addEventListener("click", () => {
     const code = input.value.trim();
@@ -39,7 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
       })
       .catch(() => {
         alert("⚠️ Não foi possível validar o cupom. Tente novamente.");
-        hiddenInput.value = "";
-      });
+      hiddenInput.value = "";
+    });
+  });
+
+  bookingForm.addEventListener("submit", () => {
+    if (hiddenInput.value === "") {
+      hiddenInput.value = input.value.trim();
+    }
   });
 });

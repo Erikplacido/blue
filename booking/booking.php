@@ -344,9 +344,8 @@ $recurrence = $_POST['recurrence']
             </div>
 
             <!-- ▸ Hidden fields -->
-            <input type="hidden" name="discountCode"   id="hiddenDiscountCode" value="">
+            <input type="hidden" name="discountCode"   id="hiddenCouponCode" value="">
             <input type="hidden" name="pointsApplied"  id="hiddenPointsApplied" value="">
-            <input type="hidden" id="hiddenCouponCode" name="discountCode">
             <input type="hidden" name="baseTotal"      id="baseTotalInput">
         </form>
     </div>
@@ -403,7 +402,6 @@ $recurrence = $_POST['recurrence']
                             >
                             <button type="button" id="applyDiscountBtn" class="apply-btn">Add</button>
                         </div>
-                        <input type="hidden" id="hiddenCouponCode" name="hiddenCouponCode">
                     </div>
 
                     <!-- Points -->
