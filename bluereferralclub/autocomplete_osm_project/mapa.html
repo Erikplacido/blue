@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapa de Localizações com Rota</title>
+  <style>
+    #map { height: 600px; width: 100%; margin-top: 20px; }
+    body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+  </style>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+</head>
+<body>
+
+  <h2>📍 Localização Salva + Sua Posição</h2>
+  <p>Permitimos o GPS do seu dispositivo para traçar uma rota até o local salvo.</p>
+
+  <div id="map"></div>
+
+  <!-- Leaflet JS + Routing -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.min.js"></script>
+
+  <script>
+    const map = L.map('map').setView([-25.2744, 133.7751], 4); // Austrália
+
+    // Adiciona mapa base
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    // Buscar endereço salvo no PHP
+    fetch('listar_locais.php')
+      .then(response => response.json())
+      .then(data => {
+        if (data.length === 0) {
+          alert('Nenhuma localização cadastrada ainda.');
+          return;
+        }
+
+        const destino = data[0]; // Último salvo
+        const destinoCoords = [parseFloat(destino.latitude), parseFloat(destino.longitude)];
+
+        // Adiciona marcador do destino
+        L.marker(destinoCoords)
+          .addTo(map)
+          .bindPopup(`<b>Destino:</b><br>${destino.endereco}`)
+          .openPopup();
+
+        // Tenta obter localização do usuário via GPS
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(position => {
+            const origemCoords = [position.coords.latitude, position.coords.longitude];
+
+            // Adiciona marcador da posição atual
+            L.marker(origemCoords)
+              .addTo(map)
+              .bindPopup("📍 Você está aqui")
+              .openPopup();
+
+            // Centraliza o mapa entre os dois pontos
+            map.setView(origemCoords, 13);
+
+            // Traça a rota
+            L.Routing.control({
+              waypoints: [
+                L.latLng(origemCoords),
+                L.latLng(destinoCoords)
+              ],
+              routeWhileDragging: false,
+              showAlternatives: false,
+              createMarker: function () { return null; } // Não adicionar ícones extras
+            }).addTo(map);
+
+          }, () => {
+            alert("Não foi possível obter sua localização. Verifique as permissões de GPS.");
+          });
+        } else {
+          alert("Seu navegador não suporta geolocalização.");
+        }
+
+      })
+      .catch(err => {
+        console.error('Erro ao carregar marcadores:', err);
+        alert("Erro ao buscar endereços no banco.");
+      });
+  </script>
+
+</body>
+</html>

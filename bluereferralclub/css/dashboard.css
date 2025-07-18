@@ -1,0 +1,878 @@
+/*--------------------------------------------------------------
+1. Reset e Normalize
+--------------------------------------------------------------*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+/*--------------------------------------------------------------
+2. Fontes e Variáveis (Design Tokens)
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root {
+  /* Tipografia */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-size-base: 0.83rem;
+  --line-height-base: 1.5;
+
+  /* Cores */
+  --color-primary: #11284B;
+  --color-primary-dark: #344966;
+  --color-bg: #f9f9f9;
+  --color-surface: #ffffff;
+  --color-border: #e5e7eb;
+  --color-text: #1f2937;
+  --color-text-muted: #6b7280;
+  --color-btn: #11284B;
+  --color-error: #E53935;
+
+  /* Espaçamentos */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+
+  /* Bordas e sombras */
+  --radius-sm: 0.375rem;
+  --radius-md: 30px;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 3px 6px rgba(0, 0, 0, 0.08);
+
+  /* Transições */
+  --transition-fast: 0.2s ease-in-out;
+}
+
+/*--------------------------------------------------------------
+3. Base
+--------------------------------------------------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  background: none;
+  border: none;
+  line-height: 1;
+}
+
+input {
+  font-family: inherit;
+}
+
+/*--------------------------------------------------------------
+4. Utilitários
+--------------------------------------------------------------*/
+.hidden {
+  display: none !important;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+/*--------------------------------------------------------------
+5. Header
+--------------------------------------------------------------*/
+.main-header {
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-banner .banner-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-sm) var(--space-md);
+}
+
+.logo-area .logo-link {
+  font-size: 1.125rem;
+  color: var(--color-text);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+/* Botões padrão */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background-color var(--transition-fast);
+}
+
+.btn:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Estados de loading/disabled */
+.btn.button-loading,
+.btn[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.btn.button-loading {
+  position: relative;
+}
+.btn.button-loading .spinner {
+  position: absolute;
+  left: var(--space-md);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Variações */
+.btn-referral-give {
+  background-color: var(--color-btn);
+}
+.btn-referral-give:hover {
+  filter: brightness(0.9);
+}
+
+.btn-logout {
+  background-color: transparent;
+  color: var(--color-text);
+  padding: var(--space-sm);
+  border-radius: 30px;
+}
+.btn-logout:hover {
+  background-color: var(--color-bg);
+}
+
+/* Menu de conta */
+.account-menu {
+  position: relative;
+}
+.account-icon-text {
+  background: transparent;
+  border: none;
+  color: var(--color-text);
+  font-size: 1rem;
+}
+.account-dropdown {
+  position: absolute;
+  top: calc(100% + var(--space-sm));
+  right: 0;
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: none;
+  min-width: 180px;
+}
+.account-menu.open .account-dropdown {
+  display: block;
+}
+.account-dropdown-menu {
+  list-style: none;
+  margin: 0;
+  padding: var(--space-xs) 0;
+}
+.account-dropdown-menu li a {
+  display: block;
+  padding: var(--space-xs) var(--space-md);
+  color: var(--color-text);
+  font-size: 0.95rem;
+  transition: background-color var(--transition-fast);
+}
+.account-dropdown-menu li a:hover {
+  background-color: var(--color-bg);
+}
+
+/*--------------------------------------------------------------
+6. Middle (informações do usuário)
+--------------------------------------------------------------*/
+.middle {
+  padding: var(--space-md);
+}
+.middle > div:first-child {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-md);
+  align-items: start;
+}
+.middle p {
+  margin: var(--space-xs) 0;
+}
+.middle strong {
+  color: var(--color-primary-dark);
+}
+
+/*--------------------------------------------------------------
+7. Bottom (tabela de referrals)
+--------------------------------------------------------------*/
+.bottom {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  padding: var(--space-md);
+  margin: var(--space-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+.bottom h3 {
+  margin-top: 0;
+  margin-bottom: var(--space-md);
+  font-size: 1.25rem;
+}
+.bottom table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: none;
+}
+.bottom thead {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+}
+.bottom thead th {
+  padding: var(--space-sm);
+  text-align: left;
+  font-weight: 500;
+}
+.bottom tbody tr:nth-child(even) {
+  background-color: var(--color-bg);
+}
+.bottom tbody td {
+  padding: var(--space-sm);
+}
+.bottom tbody td input[readonly] {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: var(--color-text);
+}
+
+/*--------------------------------------------------------------
+8. Modais (compartilhamento + form)
+--------------------------------------------------------------*/
+.modal,
+#shareModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 200;
+  overflow-y: auto;
+  align-items: center;
+  justify-content: center;
+}
+.modal.active,
+#shareModal.active {
+  display: flex;
+}
+
+/* Container principal do modal (tanto share quanto form) */
+.modal-content {
+  position: relative;
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  width: 90%;
+  max-width: 700px;   /* aumentado para acomodar duas colunas */
+  max-height: 90vh;   /* não ultrapassa a viewport */
+  overflow-y: auto;   /* rolamento interno se necessário */
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Botão fechar (X) */
+.close-button,
+.close-modal {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+/* Body exclusivo para o formModal */
+.modal-body {
+  display: grid;
+  gap: var(--space-lg);
+  margin-top: var(--space-xs); /* espaço abaixo do close */
+}
+
+/* Compartilhar */
+#shareModal h3 {
+  margin-top: 0;
+  margin-bottom: var(--space-md);
+}
+#shareModal input[type="text"] {
+  width: 100%;
+  padding: var(--space-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+}
+#shareModal .btn {
+  margin-bottom: var(--space-xs);
+}
+#shareModal .btn-submit {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+}
+#shareModal .btn-submit:hover {
+  background-color: var(--color-primary-dark);
+}
+#copyLink.btn-orange {
+  background-color: var(--color-btn);
+  color: var(--color-surface);
+}
+#copyLink.btn-orange:hover {
+  filter: brightness(0.9);
+}
+
+/*--------------------------------------------------------------
+9. Formulário dentro do modal
+--------------------------------------------------------------*/
+/* Título do form */
+.modal-title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+/* Grid responsivo de linhas e colunas */
+.modal-form {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+/* Cada “linha” agrupa até 2 colunas */
+.form-row {
+  display: grid;
+  gap: var(--space-md);
+}
+@media (min-width: 601px) {
+  .form-row { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .form-row { grid-template-columns: 1fr; }
+}
+
+/* Full-width para campos isolados */
+.full-width {
+  grid-column: 1 / -1;
+}
+
+/* Label + controle */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+/* Inputs e selects */
+.modal-form input,
+.modal-form select {
+  padding: var(--space-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+}
+
+/* Campos readonly */
+.modal-form input[readonly] {
+  background-color: var(--color-bg);
+}
+
+/* Botão Submit alinhado à direita */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--space-md);
+}
+.btn-submit {
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: filter var(--transition-fast);
+}
+.btn-submit:hover {
+  filter: brightness(0.9);
+}
+
+/*--------------------------------------------------------------
+10. Responsividade (até 768px)
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+
+  /* Header empilha itens */
+  .header-nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-sm);
+  }
+  .header-actions {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* Grid vira coluna única */
+  .middle > div:first-child {
+    grid-template-columns: 1fr;
+  }
+
+  /* Tabela → cards */
+  .bottom table,
+  .bottom thead {
+    display: none;
+  }
+  .bottom tbody,
+  .bottom tbody tr {
+    display: block;
+  }
+  .bottom tbody tr {
+    background-color: var(--color-surface);
+    margin-bottom: var(--space-md);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+  }
+  .bottom tbody tr td {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-xs) 0;
+  }
+  .bottom tbody tr td::before {
+    font-weight: 500;
+    color: var(--color-text-muted);
+  }
+  .bottom tbody tr td:nth-child(1)::before { content: 'Referred'; }
+  .bottom tbody tr td:nth-child(2)::before { content: 'Status'; }
+  .bottom tbody tr td:nth-child(3)::before { content: 'Commission'; }
+  .bottom tbody tr td:nth-child(4)::before { content: 'City'; }
+  .bottom tbody tr td:nth-child(5)::before { content: 'Created'; }
+}
+
+/*--------------------------------------------------------------
+11. Hero Background
+--------------------------------------------------------------*/
+.hero-background {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 280px;
+}
+
+
+
+
+
+
+/* 0) Contexto para posicionamento absoluto do dropdown */
+.header-nav {
+  position: relative;
+}
+
+/* 1) Ícone hamburger escondido por padrão */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* 2) DESKTOP (>=769px): sempre mostra #navMenu como barra */
+@media (min-width: 769px) {
+  /* reforça que o hambúrguer NÃO aparece */
+  .hamburger {
+    display: none !important;
+  }
+
+  /* navMenu volta a ser flex-item normal */
+  #navMenu {
+    display: flex !important;
+    position: static !important;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-sm);
+    background: none;
+    padding: 0;
+    box-shadow: none;
+  }
+}
+
+/* 3) MOBILE (<=768px): mostra hamburger e esconde navMenu */
+@media (max-width: 768px) {
+  /* 3.1) Exibe o ícone, empurrando para a direita */
+  .hamburger {
+    display: inline-flex;
+    margin-left: auto;
+  }
+
+  /* 3.2) Esconde o navMenu por padrão */
+  #navMenu {
+    display: none;
+    position: absolute;
+    top: calc(100% + var(--space-xs));
+    right: var(--space-md);
+    flex-direction: column;
+    gap: var(--space-sm);
+    padding: var(--space-md);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-md);
+    z-index: 200;
+    /* width: 200px; opcional, ajuste à sua vontade */
+  }
+
+  /* 3.3) Quando ativo, exibe como dropdown */
+  #navMenu.active {
+    display: flex;
+  }
+
+  /* --- caso queira, aqui pode entrar também o seu overflow-x na tabela .bottom */
+  .bottom table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .bottom thead {
+    display: table-header-group;
+  }
+  .bottom tbody,
+  .bottom tr,
+  .bottom td {
+    display: table-row;
+  }
+}
+
+/* Geral: wrapper para scroll horizontal */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Garante que cada coluna tenha largura mínima para não quebrar */
+.referrals-table th,
+.referrals-table td {
+  min-width: 120px;
+  padding: var(--space-xs) var(--space-sm);
+  text-align: left;
+}
+
+/* Estilos básicos da tabela */
+.referrals-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.referrals-table thead {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+}
+.referrals-table th,
+.referrals-table td {
+  border: 1px solid var(--color-border);
+}
+
+/* MODO “CARD” em telas pequenas */
+@media (max-width: 768px) {
+  /* esconde o layout de tabela */
+  .referrals-table,
+  .referrals-table thead,
+  .referrals-table tbody,
+  .referrals-table th,
+  .referrals-table td,
+  .referrals-table tr {
+    display: block;
+  }
+
+  /* cada linha vira um "card" */
+  .referrals-table tr {
+    margin-bottom: var(--space-md);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-md);
+    padding: var(--space-sm);
+  }
+
+  /* oculta o <thead> */
+  .referrals-table thead {
+    display: none;
+  }
+
+  /* cada célula vira uma linha flexível com label */
+  .referrals-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-xs) 0;
+    border: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .referrals-table td:last-child {
+    border-bottom: none;
+  }
+
+  /* usa o data-label como pseudo-label */
+  .referrals-table td::before {
+    content: attr(data-label);
+    font-weight: 500;
+    color: var(--color-text-muted);
+    margin-right: var(--space-sm);
+    flex-shrink: 0;
+  }
+}
+
+
+/* ==================================================
+   Invoice Container (centraliza e “box” branco)
+   ================================================== */
+.invoice-container {
+  max-width: 800px;                /* largura fixa */
+  margin: 40px auto;               /* centraliza horizontalmente e afasta do topo */
+  background-color: #ffffff;       /* fundo branco */
+  padding: 30px;                   /* espaçamento interno */
+  border: 1px solid #ddd;          /* leve borda cinza */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* sombra suave */
+  border-radius: 4px;              /* cantos levemente arredondados */
+}
+
+/* Centraliza títulos */
+.invoice-container h1,
+.invoice-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #11284B;
+}
+
+/* ==================================================
+   Tabela de Detalhe (history-table)
+   ================================================== */
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.history-table th,
+.history-table td {
+  border: 1px solid #e5e7eb;
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 0.95rem;
+}
+.history-table thead th {
+  background-color: #f3f4f6;
+  color: #374151;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+}
+.history-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+.history-table tbody td {
+  color: #1f2937;
+}
+
+
+
+
+
+
+
+/* ==================================================
+   modal.password (estilos específicos para o modal de senha)
+   ================================================== */
+
+/* Overlay do modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal.active {
+  display: flex;
+}
+
+/* Conteúdo do modal de senha */
+.password-modal {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg) var(--space-md);
+  max-width: 400px;
+  width: 90%;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Botão de fechar */
+.password-modal .close-button {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  cursor: pointer;
+}
+
+/* Título */
+.password-modal h2 {
+  margin: 0 0 var(--space-md);
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 1.25rem;
+}
+
+/* Mensagem de status */
+.password-modal .status {
+  margin-bottom: var(--space-md);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  text-align: center;
+}
+.password-modal .status.success {
+  background-color: #E6FFFA;
+  color: #2F855A;
+}
+.password-modal .status.error {
+  background-color: #FFF5F5;
+  color: #C53030;
+}
+
+/* Grupos de formulário */
+.password-modal .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-md);
+}
+.password-modal label {
+  margin-bottom: var(--space-xs);
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+/* Inputs com ícone */
+.input-icon-wrapper {
+  position: relative;
+}
+.input-icon-wrapper input {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  padding-right: 40px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  transition: border-color var(--transition-fast);
+}
+.input-icon-wrapper input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+.input-icon-wrapper .toggle-password {
+  position: absolute;
+  right: var(--space-sm);
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.input-icon-wrapper .toggle-password img {
+  width: 20px;
+  opacity: 0.6;
+}
+
+/* Ações do formulário */
+.password-modal .form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-lg);
+}
+.password-modal .btn-submit {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  transition: background-color var(--transition-fast);
+}
+.password-modal .btn-submit:hover {
+  background-color: var(--color-primary-dark);
+}
+.password-modal .btn-link {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  text-decoration: underline;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+.password-modal .btn-link:hover {
+  color: var(--color-primary-dark);
+}
+
+

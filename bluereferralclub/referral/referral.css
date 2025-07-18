@@ -1,0 +1,137 @@
+
+/* Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body - Fundo com Imagem */
+body {
+  background: url('https://bluefacilityservices.com.au/wp-content/uploads/2024/10/backgound_refarrel_club.webp') no-repeat center center/cover;
+  color: #D1D1D1;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Container Principal */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+}
+
+/* Caixa de Login */
+.login-box {
+  width: 100%;
+  max-width: 450px; /* Limita tamanho no desktop */
+  background: rgba(15, 26, 46, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Título */
+.login-box h2 {
+  color: #FFC107;
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+}
+
+/* Formulário */
+.login-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Campos de Entrada */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #D1D1D1;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #FFC107;
+  box-shadow: 0 0 8px rgba(255, 193, 7, 0.6);
+}
+
+/* Botão */
+.btn-gold {
+  background-color: #FFC107;
+  border: none;
+  color: #0F1A2E;
+  padding: 14px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100%;
+}
+
+.btn-gold:hover {
+  background-color: #e6ad06;
+  transform: scale(1.05);
+}
+
+/* 🔹 Ajuste para telas menores (MOBILE) */
+@media (max-width: 768px) {
+  .login-box {
+    width: 90%; /* Ocupa mais espaço na tela */
+    padding: 25px;
+    max-width: 500px;
+  }
+
+  .form-group input {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .btn-gold {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    width: 95%; /* Expande para usar quase toda a tela */
+    padding: 20px;
+  }
+
+  .form-group input {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .btn-gold {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}

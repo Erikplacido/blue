@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Autocomplete de Endereço com Salvamento</title>
+
+  <!-- Awesomplete -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.min.js"></script>
+
+  <style>
+    #status {
+      margin-top: 10px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Buscar Endereço</h2>
+  <input class="awesomplete" id="address-input" placeholder="Digite um endereço..." style="width: 300px;" autocomplete="off">
+
+  <h3>Status de Salvar:</h3>
+  <div id="status"></div>
+
+  <script>
+    const input = document.getElementById('address-input');
+    const statusDiv = document.getElementById('status');
+
+    let selectedData = null;
+    let suggestions = [];
+
+    const awesomplete = new Awesomplete(input, {
+      minChars: 3,
+      maxItems: 5,
+      autoFirst: true
+    });
+
+    input.addEventListener('input', async () => {
+      const query = input.value.trim();
+      if (query.length < 3) {
+        suggestions = [];
+        awesomplete.list = [];
+        selectedData = null;
+        return;
+      }
+
+      try {
+        const response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&addressdetails=1&limit=5&countrycodes=au`);
+        const results = await response.json();
+
+        suggestions = results.map(result => ({
+          label: result.display_name,
+          value: result
+        }));
+
+        awesomplete.list = suggestions.map(item => item.label);
+        selectedData = null;
+      } catch (error) {
+        console.error('Erro ao buscar endereço:', error);
+      }
+    });
+
+    input.addEventListener('awesomplete-selectcomplete', (event) => {
+      const selectedLabel = event.text.value;
+      const match = suggestions.find(s => s.label === selectedLabel);
+
+      if (match) {
+        selectedData = {
+          endereco: match.value.display_name,
+          lat: match.value.lat,
+          lon: match.value.lon
+        };
+        saveAddress();
+      }
+    });
+
+    async function saveAddress() {
+      if (!selectedData) {
+        statusDiv.innerText = "Por favor, selecione um endereço da lista!";
+        return;
+      }
+
+      try {
+        const response = await fetch('salvar.php', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(selectedData)
+        });
+
+        const result = await response.json();
+        statusDiv.innerText = result.message;
+      } catch (error) {
+        console.error('Erro ao salvar:', error);
+      }
+    }
+  </script>
+
+</body>
+</html>
