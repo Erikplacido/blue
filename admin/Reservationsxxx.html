@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Work Order</title>
+
+  <!-- CSS Imports -->
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<div class="ps-panel__content" style="margin-left: 0; padding: 2rem;">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="dashboard-title">New Work Order</h2>
+    <button id="toggleDarkMode" class="btn btn-sm btn-dark">Toggle Dark Mode</button>
+  </div>
+
+  <form class="wo-form">
+
+    <!-- Administrative header -->
+    <div class="bento-wrapper">
+      <fieldset class="wo-form__fieldset">
+        <legend>Administrative Details</legend>
+        <div class="wo-form__group">
+          <label>Work Order No.
+            <input type="text" placeholder="Auto-generated" readonly>
+          </label>
+          <label>Issue Date
+            <input type="date" value="">
+          </label>
+          <label>Priority
+            <select>
+              <option>Low</option>
+              <option>Medium</option>
+              <option>High</option>
+              <option>Urgent</option>
+            </select>
+          </label>
+          <label>Status
+            <select>
+              <option>Open</option>
+              <option>Planned</option>
+              <option>In progress</option>
+              <option>Completed</option>
+              <option>Cancelled</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+    </div>
+
+    <!-- Client / Site Details -->
+    <div class="bento-wrapper">
+      <fieldset class="wo-form__fieldset">
+        <legend>Client / Site Details</legend>
+        <div class="wo-form__group">
+          <label>Client Name
+            <input type="text">
+          </label>
+          <label>ABN / ACN
+            <input type="text" maxlength="11">
+          </label>
+          <label>Address
+            <textarea rows="2"></textarea>
+          </label>
+          <label>Suburb
+            <input type="text">
+          </label>
+          <label>State
+            <select>
+              <option>NSW</option>
+              <option>VIC</option>
+              <option>QLD</option>
+              <option>SA</option>
+              <option>WA</option>
+              <option>TAS</option>
+              <option>NT</option>
+              <option>ACT</option>
+            </select>
+          </label>
+          <label>Postcode
+            <input type="number" pattern="\d{4}">
+          </label>
+          <label>On-site Contact Name
+            <input type="text">
+          </label>
+          <label>Mobile
+            <input type="tel">
+          </label>
+          <label>Email
+            <input type="email">
+          </label>
+        </div>
+      </fieldset>
+    </div>
+
+    <!-- Service type & scope -->
+    <div class="bento-wrapper">
+      <fieldset class="wo-form__fieldset">
+        <legend>Service Type & Scope</legend>
+        <div class="wo-form__group">
+          <label>Main Category
+            <select>
+              <option>Cleaning</option>
+              <option>Gardening</option>
+              <option>Maintenance</option>
+            </select>
+          </label>
+          <label>Detailed Description (Required)
+            <textarea rows="4" required></textarea>
+          </label>
+        </div>
+        <div class="wo-form__group">
+          <label><input type="checkbox"> Internal cleaning</label>
+          <label><input type="checkbox"> External cleaning</label>
+          <label><input type="checkbox"> Pruning</label>
+          <label><input type="checkbox"> Lawn mowing</label>
+          <label><input type="checkbox"> Minor repairs</label>
+          <label><input type="checkbox"> Painting</label>
+        </div>
+      </fieldset>
+    </div>
+
+    <!-- Scheduling -->
+    <div class="bento-wrapper">
+      <fieldset class="wo-form__fieldset">
+        <legend>Scheduling</legend>
+        <div class="wo-form__group">
+          <label>Planned Start
+            <input type="datetime-local">
+          </label>
+          <label>Estimated Finish
+            <input type="datetime-local">
+          </label>
+          <label>Assigned Technician / Crew
+            <input type="text">
+          </label>
+        </div>
+      </fieldset>
+    </div>
+
+    <!-- Materials, equipment & cost -->
+    <div class="bento-wrapper">
+      <fieldset class="wo-form__fieldset">
+        <legend>Materials, Equipment & Cost</legend>
+        <table class="wo-form__table">
+          <thead>
+            <tr><th>Item</th><th>Quantity</th><th>Est. $</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><input type="text"></td><td><input type="number"></td><td><input type="number" step="0.01"></td></tr>
+          </tbody>
+        </table>
+        <button type="button" class="secondary">Add Row</button>
+        <div class="wo-form__group">
+          <label>Sub-total
+            <input type="number" readonly>
+          </label>
+          <label>GST 10%
+            <input type="number" readonly>
+          </label>
+          <label>Total
+            <input type="number" readonly>
+          </label>
+        </div>
+      </fieldset>
+    </div>
+
+    <!-- WHS & Compliance -->
+    <div class="bento-wrapper">
+      <fieldset class="wo-form__fieldset">
+        <legend>WHS & Compliance</legend>
+        <div class="wo-form__group">
+          <label><input type="checkbox" required> Chemicals</label>
+          <label><input type="checkbox" required> Noise</label>
+          <label><input type="checkbox" required> Working at height</label>
+          <label><input type="checkbox" required> Sharp objects</label>
+          <label><input type="checkbox" required> Biological</label>
+        </div>
+        <div class="wo-form__group">
+          <label><input type="checkbox"> Gloves</label>
+          <label><input type="checkbox"> Safety glasses</label>
+          <label><input type="checkbox"> Ear protection</label>
+          <label><input type="checkbox"> P2 mask</label>
+          <label><input type="checkbox"> Safety boots</label>
+        </div>
+        <div class="wo-form__group">
+          <label>Upload SWMS / JSA
+            <input type="file" accept="application/pdf">
+          </label>
+          <label>Observed Incidents
+            <textarea rows="2"></textarea>
+          </label>
+        </div>
+      </fieldset>
+    </div>
+
+    <!-- Access Instructions -->
+    <div class="bento-wrapper">
+      <fieldset class="wo-form__fieldset">
+        <legend>Access Instructions</legend>
+        <div class="wo-form__group">
+          <label>Permitted Access Hours
+            <input type="text">
+          </label>
+          <label>Keys / Codes / Alarms
+            <textarea rows="2"></textarea>
+          </label>
+          <label>Parking / Loading Zone
+            <input type="text">
+          </label>
+        </div>
+      </fieldset>
+    </div>
+
+    <!-- Evidence of Completion -->
+    <div class="bento-wrapper">
+      <fieldset class="wo-form__fieldset">
+        <legend>Evidence of Completion</legend>
+        <input type="hidden" name="gps_check_in">
+        <input type="hidden" name="gps_check_out">
+        <label>Upload Photos
+          <input type="file" multiple>
+        </label>
+      </fieldset>
+    </div>
+
+    <!-- Sign-off -->
+    <div class="bento-wrapper">
+      <fieldset class="wo-form__fieldset">
+        <legend>Sign-off</legend>
+        <div class="wo-form__group">
+          <label>Technician Signature
+            <canvas width="300" height="100" style="border:1px solid #ccc;"></canvas>
+          </label>
+          <label>Client Signature
+            <canvas width="300" height="100" style="border:1px solid #ccc;"></canvas>
+          </label>
+        </div>
+        <div class="wo-form__group">
+          <label>Satisfaction Rating
+            <input type="range" min="0" max="5" value="3" oninput="this.nextElementSibling.value = this.value">
+            <output>3</output>
+          </label>
+        </div>
+      </fieldset>
+    </div>
+
+    <!-- Billing & Follow-up -->
+    <div class="bento-wrapper">
+      <fieldset class="wo-form__fieldset">
+        <legend>Billing & Follow-up</legend>
+        <div class="wo-form__group">
+          <label><input type="checkbox"> Automatically raise invoice in Xero</label>
+          <label>Next Visit
+            <input type="date">
+          </label>
+          <label>Final Notes
+            <textarea rows="2"></textarea>
+          </label>
+        </div>
+      </fieldset>
+    </div>
+
+    <!-- Form Buttons -->
+    <div class="wo-form__buttons">
+      <button type="button" class="secondary">Save Draft</button>
+      <button type="submit" class="primary" disabled>Complete & Submit</button>
+    </div>
+
+  </form>
+</div>
+
+<!-- Optional JS scripts like darkmode.js here -->
+
+</body>
+</html>
