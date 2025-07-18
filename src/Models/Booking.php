@@ -44,7 +44,7 @@ class Booking {
                      start_time, end_time, recurrence_interval,
                      address, postcode, latitude, longitude, coupon_code, points_used,
                      total_price, status, contract_length, remaining_executions, num_days)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ");
             $stmt->execute([
                 $data['customer_id'],
