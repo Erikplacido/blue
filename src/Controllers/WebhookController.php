@@ -13,7 +13,7 @@ class WebhookController
 
     public function __construct()
     {
-        $this->pdo = Connection::getInstance()->getConnection();
+       $this->pdo = Connection::getInstance()->getPDO();
     }
 
     /**
