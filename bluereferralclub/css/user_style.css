@@ -1,0 +1,326 @@
+/* Reset geral */
+body {
+  margin: 0;
+  background-color: #11284B;
+  font-family: 'Helvetica Neue', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 20px;
+  color: white;
+}
+
+/* HEADER */
+header.main-header {
+  height: 15%;
+  border-radius: 16px;
+  background-color: #344966;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 0px 20px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-banner {
+  margin: 0 -20px;
+  height: 100px;
+  overflow: hidden;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+}
+
+.logo-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header-actions button {
+  background-color: #11284B;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 0 0 8px 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Account Dropdown */
+.account-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.account-dropdown {
+  background-color: #223a5e;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  border-radius: 8px 0 8px 8px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.account-dropdown-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.account-dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+}
+
+.account-dropdown-menu li a:hover {
+  background-color: #2d4a73;
+  border-radius: 4px;
+}
+
+/* Middle Section */
+.middle {
+  display: flex;
+  gap: 20px;
+  height: 25%;
+}
+
+.middle > div {
+  flex: 1;
+  background-color: #344966;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+/* Bottom Section */
+.bottom {
+  flex: 1;
+  background-color: #344966;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #344966;
+}
+
+th, td {
+  padding: 10px;
+  border: 0 solid #507dbc;
+  text-align: left;
+}
+
+th {
+  background-color: #223a5e;
+}
+
+tbody tr:hover {
+  background-color: #2d4a73;
+}
+
+/* Inputs e Selects */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  background-color: #ffffff;
+  border: 0 solid #507dbc;
+  border-radius: 8px;
+  padding: 8px;
+  color: #11284B;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #cccccc;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #88c0d0;
+  background-color: #ffffff;
+}
+
+select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 1.451 5.658C.885 5.107 1.215 4 2.02 4h11.96c.805 0 1.135 1.107.569 1.658l-5.796 5.482a1 1 0 0 1-1.506 0z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px 16px;
+  padding-right: 30px;
+}
+
+/* Botões gerais */
+button {
+  background-color: #11284B;
+  color: #F0D71A;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 35px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #344966;
+}
+
+/* Modal Geral */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.6);
+  animation: fadeIn 0.3s ease;
+  padding: 40px 0;
+}
+
+.modal-content {
+  background-color: #223a5e;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #507dbc;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  color: white;
+  position: relative;
+  animation: slideIn 0.4s ease;
+  overflow: visible;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-button:hover {
+  color: #88c0d0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-50px); }
+  to   { transform: translateY(0); }
+}
+
+/* Conteúdo do Modal */
+#modalBody {
+  margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.modal-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #88c0d0;
+}
+
+.modal-success {
+  padding: 10px;
+  background-color: #2d7d46;
+  color: white;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 1px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.form-actions {
+  text-align: center;
+}
+
+.btn-submit {
+  background-color: #11284B;
+  color: #F0D71A;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 35px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #2d4a73;
+}
+
+.forgot_password {
+  background-color: #11284B;
+  color: #F0D71A;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 35px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.forgot_password:hover {
+  background-color: #2d4a73;
+}

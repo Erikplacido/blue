@@ -1,0 +1,319 @@
+/* assets/css/style.css */
+
+/* Reset & Base */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Montserrat',sans-serif;color:#0F1A2E;line-height:1.5}
+.container{max-width:1200px;margin:0 auto;padding:0 16px}
+
+/* Header */
+header{position:sticky;top:0;width:100%;background:#fff;z-index:1000;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px}
+.logo{font-size:1.5rem;font-weight:700;color:#0F1A2E;text-decoration:none}
+.nav-links{display:flex;gap:24px;list-style:none}
+.nav-links a{color:#0F1A2E;text-decoration:none;font-weight:600}
+.hamburger{display:none;font-size:1.5rem;background:none;border:none;cursor:pointer}
+.header-ctas{display:flex;gap:16px;align-items:center}
+.phone{color:#0F1A2E;text-decoration:none;font-weight:600}
+.btn{font-weight:600;text-decoration:none;display:inline-block;text-align:center;cursor:pointer}
+.btn-book{background:#FFD600;color:#0F1A2E;padding:8px 16px;border-radius:4px}
+@media(max-width:768px){
+  .nav-links{position:fixed;top:64px;left:-100%;flex-direction:column;background:#fff;width:200px;padding:16px;transition:left .3s}
+  .nav-links.open{left:0}
+  .hamburger{display:block}
+}
+.logo img {
+  height: 60px;
+  display: block;
+}
+
+
+/* Hero Slider */
+.hero-slider {
+  position: relative;
+  height: 50vh; /* Alterado de calc(100vh - 72px) para melhor compatibilidade */
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%; /* garante altura completa para o container */
+}
+
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000; /* fallback caso a imagem não carregue */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 40, 75, 0.76); /* sua nova cor */
+  z-index: 1;
+}
+
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 0 16px;
+  z-index: 2;
+}
+
+.slide-content h1 {
+  font-size: 4rem;
+  color: #FFD600;
+  margin-bottom: 16px;
+}
+
+.slide-content p {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+
+.btn-outline {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition: transform 0.3s;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  transform: scale(1.05);
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.prev { left: 16px; }
+.next { right: 16px; }
+
+.indicators {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+
+.indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #FFD600;
+  background: transparent;
+  cursor: pointer;
+}
+
+.indicators button.active {
+  background: #FFD600;
+}
+
+/* Responsive Tweaks */
+@media(max-width: 1024px) {
+  .slide-content h1 { font-size: 2.5rem; }
+  .slide-content p { font-size: 1rem; }
+}
+
+@media(max-width: 768px) {
+  .slide-content h1 { font-size: 2rem; }
+  .btn-outline { width: 100%; }
+}
+
+
+/* Service Cards */
+#cards-container{display:grid;gap:24px;padding:40px 0}
+.card{background:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.05);overflow:hidden;display:flex;flex-direction:column}
+.card-image{position:relative}
+.card-image img{width:100%;display:block;border-radius:12px 12px 0 0}
+.bookmark{position:absolute;top:8px;right:8px;background:rgba(0,0,0,0.5);border:none;color:#fff;padding:4px;border-radius:50%;cursor:pointer}
+.card-body{padding:16px;display:flex;flex-direction:column;gap:8px}
+.title-rating{display:flex;justify-content:space-between;align-items:center}
+.title-rating h3{font-size:1.25rem;font-weight:600;color:#0F1A2E}
+.rating{display:flex;align-items:center;font-size:0.9rem;color:#FFD600}
+.rating .star{margin-right:4px}
+.category{font-size:0.9rem;color:#6B6B6B}
+.meta{display:flex;flex-wrap:wrap;gap:8px;font-size:0.9rem;color:#6B6B6B}
+.price-book{display:flex;justify-content:space-between;align-items:center;margin-top:auto}
+.price small{font-size:0.9rem;color:#6B6B6B}
+.price strong{font-size:1.25rem;color:#0F1A2E;font-weight:600}
+.btn-orange{background:#11284B;color:#F0D71A;padding:12px 24px;border:none;border-radius:35px;cursor:pointer;transition:filter .3s}
+.btn-orange:hover{filter:brightness(0.9)}
+
+/* Layout variations via media queries */
+@media(min-width:1025px){
+  #cards-container{grid-template-columns:1fr 1fr}
+  .card{flex-direction:row}
+  .card-image{flex:0 0 40%}
+  .card-body{flex:1}
+}
+@media(max-width:1024px){
+  #cards-container{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  #cards-container{grid-template-columns:1fr}
+}
+
+/* Modal */
+.modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);display:none;align-items:center;justify-content:center;z-index:2000}
+.modal-content{background:#fff;border-radius:16px;max-width:800px;width:90%;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.1)}
+.close-modal{position:absolute;top:16px;right:16px;background:none;border:none;font-size:1.5rem;cursor:pointer}
+.modal-grid{display:grid;grid-template-columns:1fr 1fr}
+.modal-left{position:relative;background-size:cover;background-position:center;min-height:400px}
+.modal-left-overlay{position:absolute;inset:0;background:linear-gradient(rgba(15,26,46,0.7),rgba(15,26,46,0.7))}
+.modal-left-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;padding:24px;text-align:left}
+.modal-left-text h2{font-size:2.5rem;font-weight:700;margin-bottom:8px}
+.modal-left-text h4{font-size:1.2rem;color:#FFD600;margin-bottom:16px}
+.modal-left-text p{font-size:0.9rem;font-style:italic;opacity:0.8}
+.modal-right{background:#FFD600;padding:32px;display:flex;flex-direction:column;gap:16px}
+.modal-right h3{font-size:1.25rem;color:#0F1A2E;font-weight:600}
+.modal-right form{display:flex;flex-direction:column;gap:16px}
+.modal-right input,
+.modal-right select,
+.modal-right textarea{height:48px;padding:0 16px;border:1px solid #DDD;border-radius:8px;font-size:1rem;background:#fff}
+.modal-right textarea{resize:vertical;height:auto}
+.modal-right .form-row{display:flex;gap:16px}
+.modal-right .btn-submit{background:#0F1A2E;color:#fff;padding:12px 24px;border:none;border-radius:24px;cursor:pointer;transition:filter .3s}
+.modal-right .btn-submit:hover{filter:brightness(0.9)}
+.modal-right .help-link{text-align:center;font-size:0.9rem;color:#0F1A2E}
+.modal-right .help-link a{color:#0F1A2E;text-decoration:none;font-weight:600}
+.modal-right .help-link a:hover{text-decoration:underline}
+
+@media(max-width:768px){
+  .modal-grid{grid-template-columns:1fr;gap:0}
+  .modal-left{min-height:200px}
+  .modal-left-text h2{font-size:1.8rem}
+  .modal-left-text h4{font-size:1rem}
+  .modal-right{padding:16px}
+  .modal-grid .modal-right .form-row{flex-direction:column}
+}
+/* Contact Section */
+.contact-section {
+  padding: 80px 0;
+  background: #F9F9F9;
+}
+
+.contact-section .contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.contact-info h2,
+.contact-form h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: #11284B;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #0F1A2E;
+}
+
+.contact-info p strong {
+  color: #11284B;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form .form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #DDD;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #FFF;
+  color: #0F1A2E;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form .btn-submit {
+  align-self: flex-start;
+  background: #11284B;
+  color: #FFF;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter 0.3s;
+}
+
+.contact-form .btn-submit:hover {
+  filter: brightness(0.9);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .contact-section .contact-content {
+    grid-template-columns: 1fr;
+  }
+  .contact-form .form-row {
+    flex-direction: column;
+  }
+}
+
+
+
+/* Faz o form-group sempre “stretch” para toda a largura */
+.modal-right .form-group {
+  width: 100%;
+}
+
+/* Garante que todo input/select/textarea dentro da modal-right ocupe 100% */
+/* Se você estiver usando o Awesomplete, inclua também o wrapper */
+.modal-right input,
+.modal-right select,
+.modal-right textarea,
+.modal-right .awesomplete {
+  width: 100% !important;
+}
+
+/* E para cobrir o input interno do Awesomplete: */
+.modal-right .awesomplete > input {
+  width: 100% !important;
+}

@@ -1,0 +1,73 @@
+[19-Jul-2025 17:46:20 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"Fabio","referred_last_name":"Sobrenome Dificil","email":"binho@gmail.com","mobile":"7171819393737282","postcode":"3204","client_type":"Company","service_name":"Commercial Cleaning","more_details":"Bla bla Bla","user_id":"1","address":"7A Talbot Avenue","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[19-Jul-2025 17:46:20 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => Fabio
+    [referred_last_name] => Sobrenome Dificil
+    [email] => binho@gmail.com
+    [mobile] => 7171819393737282
+    [postcode] => 3204
+    [client_type] => Company
+    [service_name] => Commercial Cleaning
+    [more_details] => Bla bla Bla
+    [user_id] => 1
+    [address] => 7A Talbot Avenue
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[19-Jul-2025 17:47:45 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[19-Jul-2025 17:49:31 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[19-Jul-2025 17:49:38 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[19-Jul-2025 17:49:40 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[19-Jul-2025 17:50:29 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[19-Jul-2025 17:54:16 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[19-Jul-2025 17:58:19 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[19-Jul-2025 19:13:27 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[19-Jul-2025 19:14:10 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[19-Jul-2025 19:18:47 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"gagagaga","referred_last_name":"jajajaa","email":"erik.placido@gmail.com","mobile":"7171819393737282","postcode":"3204","client_type":"Home","service_name":"Commercial Cleaning","more_details":"nananana","user_id":"1","address":"7A Talbot Avenue","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[19-Jul-2025 19:18:47 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => gagagaga
+    [referred_last_name] => jajajaa
+    [email] => erik.placido@gmail.com
+    [mobile] => 7171819393737282
+    [postcode] => 3204
+    [client_type] => Home
+    [service_name] => Commercial Cleaning
+    [more_details] => nananana
+    [user_id] => 1
+    [address] => 7A Talbot Avenue
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[19-Jul-2025 19:19:22 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[19-Jul-2025 19:19:34 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[21-Jul-2025 11:58:54 UTC] Raw JSON recebido: {"referral_code":"ERIK42","referred":"Quote Form","referred_last_name":"teste","email":"erik.placido@gmail.com","mobile":"7171819393737282","postcode":"3204","client_type":"Home","service_name":"Home Cleaning","more_details":"Home Cleaning","user_id":"1","address":"7A Talbot Avenue","number":"7A","suburb":"Bentleigh","city":"Bentleigh","territory":"Victoria"}
+[21-Jul-2025 11:58:54 UTC] Received Payload: Array
+(
+    [referral_code] => ERIK42
+    [referred] => Quote Form
+    [referred_last_name] => teste
+    [email] => erik.placido@gmail.com
+    [mobile] => 7171819393737282
+    [postcode] => 3204
+    [client_type] => Home
+    [service_name] => Home Cleaning
+    [more_details] => Home Cleaning
+    [user_id] => 1
+    [address] => 7A Talbot Avenue
+    [number] => 7A
+    [suburb] => Bentleigh
+    [city] => Bentleigh
+    [territory] => Victoria
+)
+
+[21-Jul-2025 11:59:55 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
+[21-Jul-2025 12:01:33 UTC] Falha ao atualizar status: Unknown column 'status' in 'SET'
