@@ -1,0 +1,343 @@
+/* ===================
+   0. VARIABLES (HERDADO DO GLOBAL)
+   =================== */
+
+/* Variáveis herdadas da base. Aqui configuramos estilos específicos para o Dashboard. */
+
+/* ===================
+   1. LAYOUT GERAL
+   =================== */
+
+/* Sidebar */
+.ps-panel__sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #11284B;
+    padding: var(--space-md);
+    overflow-y: auto;
+    box-shadow: var(--shadow-md);
+    z-index: 1000;
+}
+
+.ps-panel__top {
+    margin-bottom: var(--space-lg);
+}
+
+.ps-panel__top h3 {
+    color: var(--color-link-hover);
+    font-size: var(--font-size-h3);
+    text-align: center;
+}
+
+.ps-panel__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ps-panel__menu li {
+    margin-bottom: var(--space-md);
+}
+
+.ps-panel__menu li a {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 500;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    transition: background 0.3s, color 0.3s;
+}
+
+.ps-panel__menu li a i {
+    margin-right: var(--space-sm);
+}
+
+.ps-panel__menu li a:hover {
+    background: #495057;
+    color: var(--color-link-hover);
+}
+
+/* Main Content */
+.ps-panel__content {
+    margin-left: 250px;
+    padding: 2rem;
+    background: var(--color-background);
+    min-height: 100vh;
+    transition: all 0.3s ease;
+}
+.ps-panel__content2 {
+    margin: 50px;
+    padding: 2rem;
+    background: var(--color-background);
+    min-height: 100vh;
+    transition: all 0.3s ease;
+}
+
+/* ===================
+   2. DASHBOARD HEADER
+   =================== */
+
+.dashboard-title {
+    font-size: 2.8rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-heading);
+}
+
+/* Botão Dark Mode */
+#toggleDarkMode {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.4rem;
+    border-radius: var(--radius-sm);
+    background: var(--color-link-hover);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#toggleDarkMode:hover {
+    background: #e0a800;
+}
+
+/* ===================
+   3. DASHBOARD COLUMNS (NOVO)
+   =================== */
+
+.dashboard-columns {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    overflow-x: auto;
+}
+
+.dashboard-column {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-width: 250px;
+}
+
+/* ===================
+   4. CARDS E ELEMENTOS
+   =================== */
+
+/* Bento Cards */
+.bento-card {
+    background: var(--color-background);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.bento-wrapper {
+    background: #f5f5f5;
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.bento-card:hover, 
+.bento-wrapper:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+
+
+/* ===================
+   6. MINI CLEANERS
+   =================== */
+
+.mini-cleaners-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: var(--space-md);
+}
+
+.cleaner-mini-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.cleaner-mini-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s;
+}
+
+.cleaner-mini-card img:hover {
+    transform: scale(1.1);
+}
+
+/* Novo: Cards full-width (linha inteira) */
+.full-width-card {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+/* ===================
+   7. DARK MODE
+   =================== */
+
+body.dark-mode {
+    --color-background: #1e1e1e;
+    --color-text: #cccccc;
+    --color-heading: #ffffff;
+    --color-link: #66ccff;
+    --color-link-hover: #fcb800;
+    --color-badge-ok: #2c4b27;
+    --color-badge-gray: #333333;
+    background-color: var(--color-background);
+}
+
+body.dark-mode .ps-panel__sidebar {
+    background: #2c2c2c;
+}
+
+body.dark-mode .ps-panel__menu li a:hover {
+    background: #3a3a3a;
+}
+
+body.dark-mode .bento-card,
+body.dark-mode .bento-wrapper {
+    background: #2b2b2b;
+    box-shadow: none;
+}
+
+.custom-modal-content .close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+/* ===================
+   8. ANIMATIONS
+   =================== */
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ===================
+   9. RESPONSIVE
+   =================== */
+
+@media (max-width: 768px) {
+    .ps-panel__content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .dashboard-columns {
+        flex-wrap: wrap;
+    }
+
+    .dashboard-column {
+        min-width: 100%;
+    }
+
+    .bento-card,
+    .bento-wrapper {
+        padding: var(--space-md);
+    }
+
+    .mini-card {
+        width: 70px;
+        height: 70px;
+        font-size: 1rem;
+    }
+
+    #toggleDarkMode {
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
+
+.ps-panel__menu {
+    list-style: none;
+    padding: 0;
+}
+
+/* Cada item do menu */
+.ps-panel__menu > li {
+    position: relative;
+    border-radius: 8px; /* 🔁 canto arredondado em todo item principal */
+    overflow: hidden;   /* 🔒 garante que submenus não estourem cantos */
+    margin-bottom: 6px; /* Espaçamento entre itens */
+}
+
+.ps-panel__menu > li > a {
+    display: block;
+    padding: 12px 16px;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #000000;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 8px; /* 🔁 botão com borda arredondada */
+}
+
+.ps-panel__menu > li > a:hover {
+    background-color: #ffc107;
+    color: #000;
+}
+
+/* Submenu container */
+.ps-panel__menu .submenu {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+    background-color: #11284B;
+    border-radius: 0 0 8px 8px; /* 🔁 cantos inferiores do submenu */
+    margin-top: -6px; /* Unifica com item pai */
+    overflow: hidden;
+}
+
+/* Submenu visível quando aberto */
+.ps-panel__menu li.open .submenu {
+    display: block;
+}
+
+/* Links dentro do submenu */
+.ps-panel__menu .submenu li a {
+    padding: 10px 16px;
+    color: #ffffff;
+    display: block;
+    border-radius: 4px; /* 🔁 links com leve curva */
+    transition: background 0.2s;
+    margin: 4px 8px;
+}
+
+.ps-panel__menu .submenu li a:hover {
+    background-color: #ffc107;
+    color: #000;
+}
+
+/* força o SVG original do Bootstrap */
+.btn-close{
+    background-image: var(--bs-btn-close-bg) !important; /* recupera o ícone */
+    background-size: 1em;          /* garante tamanho */
+    opacity: .9;                   /* visível */
+}
+
