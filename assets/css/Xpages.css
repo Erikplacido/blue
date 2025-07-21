@@ -1,0 +1,110 @@
+/* ================================
+   1. Design Tokens
+================================ */
+:root {
+  --color-primary: #11284B;
+  --color-primary-dark: #344966;
+  --color-bg: #f9f9f9;
+  --color-surface: #ffffff;
+  --color-border: #e5e7eb;
+  --color-text: #1f2937;
+  --color-text-muted: #6b7280;
+  --color-btn: #F0D71A;
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 3px 6px rgba(0, 0, 0, 0.08);
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-size-base: 1rem;
+  --line-height-base: 1.5;
+}
+
+.hero-background {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%; /* altura fixa */
+}
+
+/* ================================
+   2. Reset & Base
+================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: var(--radius-sm);
+}
+
+/* ================================
+   3. Layout & Containers
+================================ */
+.booking__container {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .booking__container {
+    padding: var(--space-lg);
+  }
+}
+
+/* ================================
+   4. Two-Column Layout
+================================ */
+.booking-columns-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+.booking-left,
+.booking-right {
+  flex: 1 1 100%;
+}
+@media (min-width: 768px) {
+  .booking-left,
+  .booking-right {
+    flex: 1 1 48%;
+  }
+}
+
+/* ================================
+   5. Utility Classes
+================================ */
+.btn--full {
+  width: 100%;
+}
+.space-y-4 > * + * {
+  margin-top: var(--space-md);
+}
+.my-6 {
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+/* Additional helpers can be added here */
